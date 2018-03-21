@@ -1,0 +1,15 @@
+.buy-one-click__link {
+  border-bottom: 2px dotted;
+  font-size: 13px;
+  font-weight: 600;
+  @media (max-width: $screen-md-max) {
+    font-size: 12px;
+  }
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+  &:hover {
+    border-color: transparent;
+  }
+}

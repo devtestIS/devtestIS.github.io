@@ -1,0 +1,9 @@
+.top-menu {
+  padding-top: 32px;
+  padding-bottom: 22px;
+  @media(max-width: $screen-md-max){
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+}

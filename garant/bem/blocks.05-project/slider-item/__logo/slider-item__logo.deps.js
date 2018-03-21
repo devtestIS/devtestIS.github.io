@@ -1,0 +1,12 @@
+[
+  ({
+    mustDeps: [
+      {
+        block: 'img'
+      }
+    ]
+  }),
+  ({
+    shouldDeps: []
+  })
+]

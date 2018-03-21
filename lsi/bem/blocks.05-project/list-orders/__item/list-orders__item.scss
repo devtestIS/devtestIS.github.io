@@ -1,0 +1,5 @@
+.list-orders__item {
+  padding: 5px 30px;
+  position: relative;
+  @include clearfix();
+}

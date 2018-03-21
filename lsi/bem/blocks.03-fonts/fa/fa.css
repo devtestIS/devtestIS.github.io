@@ -1,0 +1,13 @@
+/*csslint adjoining-classes:false */
+@import "../../../bower_components/font-awesome/css/font-awesome.min.css";
+/*csslint adjoining-classes:true */
+
+.fa {
+  font-family: Arial;
+  visibility: hidden;
+}
+
+.fa-font-loaded .fa {
+  font-family: FontAwesome;
+  visibility: visible;
+}

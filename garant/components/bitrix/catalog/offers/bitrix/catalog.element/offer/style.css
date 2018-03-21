@@ -1,0 +1,11 @@
+.h-custom {
+    color: #3b4256;
+    font-family: "Open Sans","PT Sans",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.h-custom-margin {
+    margin-top: 36px;
+}

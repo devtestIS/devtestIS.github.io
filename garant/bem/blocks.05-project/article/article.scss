@@ -1,0 +1,27 @@
+.article {
+  width: 32%;
+  transition: 0.3s;
+  padding: 26px 25px 30px 24px;
+  box-shadow: 0 0 20px rgba(0, 112, 185, 0.1);
+  border-radius: 5px;
+  background: #fff;
+  color: $text-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+  margin-left: 30px;
+  &:first-child {
+    margin-left: 0;
+  }
+  & p {
+    margin: 10px 0 0 0;
+  }
+  &:hover{
+    transform: translateY(-10px);
+    box-shadow: -1px 8px 20px rgba(0, 112, 185, 0.25);
+  }
+  @media(max-width: $screen-sm-max){
+    margin: 15px 0;
+    width: 100%;
+  }
+}

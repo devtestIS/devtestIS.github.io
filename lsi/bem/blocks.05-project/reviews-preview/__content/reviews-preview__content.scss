@@ -1,0 +1,6 @@
+.reviews-preview__content {
+  margin-left: 230px;
+  @media (max-width: $screen-sm-max) {
+    margin-left: 0;
+  }
+}

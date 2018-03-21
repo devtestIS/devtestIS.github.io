@@ -1,0 +1,11 @@
+.catalog__title {
+  line-height: 1.1;
+  font-size: 14px;
+  margin-top: 10px;
+  @media (max-width: $screen-xs-max) {
+    margin-left: 95px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 65px;
+  }
+}

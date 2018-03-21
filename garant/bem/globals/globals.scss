@@ -1,0 +1,13 @@
+// Глобальные переменные SCSS
+// Данный файл будет автоматически подключен в начало каждого компилируемого scss-файла
+// Изменения в этом файле приводят к пересборке технологии CSS
+$icon-font-path: '../../../bower_components/bootstrap-sass/assets/fonts/bootstrap/';
+
+@import "../blocks.03-fonts/icomoon/variables";
+
+@import "variables";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "mixins";
+@import "extend";
+

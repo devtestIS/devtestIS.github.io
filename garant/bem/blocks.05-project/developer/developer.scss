@@ -1,0 +1,10 @@
+.developer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  line-height: 0;
+  .a, a{
+    color: inherit;
+  }
+}

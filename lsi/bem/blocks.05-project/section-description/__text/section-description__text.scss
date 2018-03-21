@@ -1,0 +1,15 @@
+.section-description__text {
+    @include make-sm-column(12);
+    @include make-sm-column(9);
+    @include make-md-column(9);
+    @include make-lg-column(7);
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: $font-PT;
+        color: $tooltip-color;
+        line-height: 21px;
+        margin-bottom: 14px;
+    }
+}

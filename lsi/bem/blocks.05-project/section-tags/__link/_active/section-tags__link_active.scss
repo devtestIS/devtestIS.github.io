@@ -1,0 +1,7 @@
+.section-tags__link_active {
+    background: $brand-primary;
+
+    &, &:hover {
+        color: $btn-info-bg;
+    }
+}

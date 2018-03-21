@@ -1,0 +1,32 @@
+.nav {
+border: none;
+
+  &> li:first-child > a{
+    &:before{
+      display: none;
+    }
+  }
+  & > li > a{
+    text-decoration: none;
+    color: $link-color;
+    padding: 15px 18px;
+
+    &:before{
+      content: '';
+      position: absolute;
+      left:0;
+      width: 2px;
+      height: 2px;
+      top: calc(50% - 1px);
+      background-color: #ffcd4e;
+    }
+
+  }
+  & > li > a:hover{
+    background: transparent;
+    border-color: transparent;
+    text-decoration: underline;
+    color: $link-color;
+    
+  }
+}

@@ -1,0 +1,10 @@
+.reviews-line__one {
+  float: left;
+  min-height: 1px;
+  width: 200px;
+  @media (max-width: $screen-xs-max) {
+    float: none;
+    width: auto;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,20 @@
+.slider-item__logo {
+  width: 128px;
+  height: 84px;
+  margin-right: 7px;
+
+
+
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+ & img {
+    margin: 0 auto;
+  }
+  @media(max-width: $screen-xs-max){
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+}

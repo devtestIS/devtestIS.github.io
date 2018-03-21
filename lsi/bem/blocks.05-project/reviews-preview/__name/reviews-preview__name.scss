@@ -1,0 +1,10 @@
+.reviews-preview__name {
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding-right: 75px;
+  @media (max-width: $screen-xs-max) {
+    padding-right: 0;
+    padding-top: 10px;
+  }
+}

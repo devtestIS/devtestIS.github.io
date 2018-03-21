@@ -1,0 +1,12 @@
+.authorization__link {
+  color: #000;
+  text-decoration: underline;
+  height: 54px;
+  display: table-cell;
+  vertical-align: middle;
+  &:hover,
+  &:focus{
+    text-decoration: none;
+    color: $color_primary;
+  }
+}

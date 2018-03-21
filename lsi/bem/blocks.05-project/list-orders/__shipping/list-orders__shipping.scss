@@ -1,0 +1,14 @@
+.list-orders__shipping {
+  font-size: 19px;
+  color: #919191;
+  font-weight: bold;
+  padding-top: 7px;
+  span {
+    color: #303030;
+    font-weight: 600;
+    margin-left: 30px;
+  }
+  @media (min-width: $screen-sm-min) {
+    float: left;
+  }
+}

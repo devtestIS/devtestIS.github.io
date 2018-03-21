@@ -1,0 +1,9 @@
+.checkout-address__info {
+  width: 45%;
+  float: left;
+  padding: 35px 35px;
+  @media (max-width: $screen-xs-max) {
+    width: 100%;
+    float: none;
+  }
+}

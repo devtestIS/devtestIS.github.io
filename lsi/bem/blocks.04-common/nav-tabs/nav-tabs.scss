@@ -1,0 +1,31 @@
+.nav-tabs {
+  @include clearfix;
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+  //it's bootstrap...
+  > li {
+    margin-bottom: 0;
+    > a {
+      margin-right: 8px;
+      margin-bottom: 8px;
+      border: 1px solid #c6c6c6;
+      border-radius: $border-radius-base;
+      display: block;
+      &:focus,
+      &:hover {
+        border-color: #c6c6c6;
+        text-decoration: none;
+        color: #000;
+      }
+    }
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        border-bottom-color: #c6c6c6;
+        text-decoration: none;
+      }
+    }
+  }
+}

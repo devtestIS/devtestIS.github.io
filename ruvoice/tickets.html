@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ruvoice</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--[if lte IE 8]>
+        <script src="js/poly-checked.js"></script>
+        <![endif]-->
+    <!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="css/ie8.css" />
+	<![endif]-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="control-header">
+       <div class="top-header dark-top">
+           <div class="container">
+               <ul class="log-in">
+                   <li class="dropdown">
+                       <a href="#" id="lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="rus"></span>рус<span class="caret"></span></a>
+                   </li>
+                   <li><a href="#" class="balance">Баланс:  <strong>750 Руб.</strong><i class="fa fa-plus"></i></a></li>
+               </ul>
+               <ul class="nav-top">
+                  <li role="presentation"><a href="#"><i class="hs-1"></i>Услуги</a></li>
+                  <li role="presentation"><a href="#"><i class="hs-2"></i>Сообщения</a></li>
+                  <li role="presentation"><a href="#"><i class="hs-3"></i>Заказать</a></li>
+                  <li role="presentation"><a href="#"><i class="hs-4"></i>Финансы</a></li>
+                  <li role="presentation"><a href="#"><i class="hs-5"></i>Поддержка</a></li>
+                </ul>
+                <div class="user-panel clearfix">
+                           <div class="pull-left user">
+                               <a href="#" class="pull-left"><img src="img/avatar.jpg" alt="avatar"></a>
+                               <a href="#" class="pull-right user-name">
+                                  <span class="name">Stanislav</span>
+                                  <span class="type">Premium</span>
+                                </a>
+                           </div>
+                    <a href="#" class="pull-right log-out"><i class="set"></i>Выйти</a>
+                </div>
+           </div>
+       </div>
+        <nav>
+           <div class="container">
+               <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
+                <ul class="nav nav-pills pull-right">
+                  <li role="presentation"><a href="#">Тарифы</a></li>
+                  <li role="presentation" class="dropdown"><a href="#" id="drop-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Услуги</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop-menu">
+                      <li><a href="#">Радио бот для teamspeak</a></li>
+                      <li><a href="#">Администрирование сервера </a></li>
+                      <li><a href="#">Специальные скрипты</a></li>
+                  </ul>
+                  </li>
+                  <li role="presentation"><a href="#">Оплата</a></li>
+                  <li role="presentation"><a href="#">отзывы</a></li>
+                  <li role="presentation"><a href="#">Документы</a></li>
+                  <li role="presentation"><a href="#">Контакты</a></li>
+                </ul>
+           </div>
+        </nav>
+    </header>
+
+    <div class="container tickets">
+        <h1>Поддержка</h1>
+        <div class="question">
+            <h2>У меня не работает сервер, что делать?</h2>
+            <p>Ventrilo, Teamspeak, а так же Mumble сервера могут использоваться для домашнего / персонального применения, например общение с друзьями и семьей или обмена информацией во время онлайн игр, где голосовое общение является важным фактором</p>
+            <div class="clearfix">
+                <ul class="pull-left links">
+                    <li><a href="#">Ответов: 3</a></li>
+                    <li><a href="#">Технический отдел</a></li>
+                    <li><a href="#">В работе</a></li>
+                </ul>
+                <button class="pull-right"><i class="close-b"></i>Закрыть тикет</button>
+                </div>
+            </div>
+            <div class="answer">
+                <h3>Ответ</h3>
+                <div class="admin">
+                    <span>Поддержка</span>
+                    <p>Мы сейчас разбираемся с проблемой, как уточним из за чего, сразу напишем и исправим ошибку. спасибо за ожидание.</p>
+                </div>
+                <div class="user">
+                    <span>alastas@yandex.ru (Вы)</span>
+                    <p>Спасибо большое я очень жду вашей помощи.</p>
+                </div>
+                <div class="user">
+                    <span>alastas@yandex.ru (Вы)</span>
+                    <p>Спасибо, я уже нашел почему сервер перестал работать, мой косяк:)</p>
+                </div>
+                <div class="admin">
+                    <span>Поддержка</span>
+                    <p>Всего наилучшего. Обращайтесь.</p>
+                </div>
+            </div>
+            <div class="comment">
+                <span class="header">Ваш комментарий</span>
+                <textarea cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+                <div class="clearfix">
+                    <div class="pull-left">
+                        <a href="#"><i class="attach"></i><span>Прикрепить файл</span></a>
+                    </div>
+                    <div class="pull-right">
+                        <button>Оставить комментарий</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <footer>
+            <div class="footer-top">
+                <div class="container">
+                  <ul class="pull-left links">
+                      <li><a href="#"><span class="email"></span>support@ruvoice.com</a></li>
+                      <li><a href="#"><span class="chat"></span>Система тикет-сообщений</a></li>
+                      <li><a href="#"><span class="icq"></span>108004</a></li>
+                  </ul>
+                  <ul class="social">
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                   </ul>
+                </div>
+            </div>
+            <div class="container">
+                  <div class="row">
+                      <div class="col-xs-3 section">
+                          <span class="header">Аккаунт</span>
+                          <ul class="account">
+                              <li><a href="#">Войти</a></li>
+                              <li><a href="#">Зарегистрироваться</a></li>
+                              <li><a href="#" class="forgot-pass">Забыли пароль?</a></li>
+                          </ul>
+                          <span class="lock"></span>
+                      </div>
+                      <div class="col-xs-3 section">
+                          <span class="header">Компания</span>
+                          <ul>
+                              <li><a href="#">О компании</a></li>
+                              <li><a href="#">Партнерская программа</a></li>
+                              <li><a href="#">Обратная связь</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-xs-3 section">
+                          <span class="header">Услуги</span>
+                          <ul>
+                              <li><a href="#">Заказать Ventrilo</a></li>
+                              <li><a href="#">Заказать Teamspeak</a></li>
+                              <li><a href="#">Заказать Mumble</a></li>
+                              <li><a href="#">Радио-бот для TS3</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-xs-3 section">
+                          <span class="header">Документация</span>
+                          <ul>
+                              <li><a href="#">Настройка Ventrilo</a></li>
+                              <li><a href="#">Настройка Teamspeak 3</a></li>
+                              <li><a href="#">Настройка Mumble</a></li>
+                          </ul>
+                      </div>
+                  </div>
+            </div>
+        </footer>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/jquery.range.js"></script>
+    <script>
+        $(window).load(function() {
+          $('.bg-slider').flexslider({
+            animation: "slide",
+            directionNav: false
+            });
+            $('.order-slider').flexslider({
+                animation: "slide",
+                animationLoop: true,
+                itemWidth: 300,
+                itemMargin: 5,
+                minItems: 3,
+                maxItems: 9,
+                prevText: "",
+                nextText: "",
+                controlNav: false
+            });
+                });
+        $('.slider-input').jRange({
+            from: 10,
+            to: 2000,
+            step: 1,
+            scale: [10,40,125,350,2000],
+            format: '%s слотов',
+            width: 600,
+            showLabels: true
+            });
+        $(function () {
+              $('[data-toggle="popover"]').popover({
+                  placement: 'right'
+              });
+            });
+        $('.dropdown').hover(function() {
+              $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+            }, function() {
+              $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+            });
+      </script>
+      <!-- For browser test delete on production -->
+      <script src="js/delet_me.js"></script>
+  </body>
+</html>

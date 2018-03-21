@@ -1,0 +1,14 @@
+.product-info__title {
+  font-size: 15px;
+  margin-bottom: 8px;
+  position: relative;
+  &:before {
+    background-repeat: no-repeat;
+  }
+  @media print {
+    padding-left: 0 !important;
+    &:before {
+      content: none !important;
+    }
+  }
+}

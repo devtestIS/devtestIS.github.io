@@ -1,0 +1,23 @@
+.product-info__row {
+//  display: table;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  line-height: 1.1;
+  margin-bottom: 7px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+//  &:before{
+//    content: '';
+//    flex: 10 0 auto;
+//    display: block;
+//    order: 1;
+//    background-color: #ccc;
+//  }
+  @media print {
+    a{
+      text-decoration: none !important;
+    }
+  }
+}

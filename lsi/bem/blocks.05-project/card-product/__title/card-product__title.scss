@@ -1,0 +1,14 @@
+.card-product__title {
+  font-size: 15px;
+  font-weight: 700;
+  height: 57px;
+  display: block;
+  color: #000;
+  overflow: hidden;
+  line-height: 1.2;
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: #000;
+  }
+}

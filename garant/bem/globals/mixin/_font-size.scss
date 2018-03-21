@@ -1,0 +1,29 @@
+@mixin font-size($font-size, $font-size-small: $font-size-large){
+  @if(($font-size/100px) * (percentage($screen-xs-min / $screen-lg-min) / 1%) < ($font-size-small / 1px)){
+    font-size: $font-size-small;
+  }
+  @else {
+    font-size: ceil(($font-size/100) * (percentage($screen-xs-min / $screen-lg-min) / 1%));
+  }
+
+  @if(($font-size/100px) * (percentage($screen-xs-max / $screen-lg-min)/ 1%) > ($font-size-small / 1px)){
+    @media (min-width: $screen-xs-max) {
+      font-size: ceil(($font-size/100) * (percentage($screen-xs-max / $screen-lg-min)/ 1%));
+    }
+  }
+
+  @if(($font-size/100px) * (percentage($screen-sm-min / $screen-lg-min) / 1%) > ($font-size-small / 1px)){
+    @media (min-width: $screen-sm-min) {
+      font-size: ceil(($font-size/100) * (percentage($screen-sm-min / $screen-lg-min) / 1%));
+    }
+  }
+
+  @if(($font-size/100px) * (percentage($screen-md-min / $screen-lg-min) / 1%) > ($font-size-small / 1px)){
+    @media (min-width: $screen-md-min) {
+      font-size: ceil(($font-size/100) * (percentage($screen-md-min / $screen-lg-min) / 1%));
+    }
+  }
+  @media (min-width: $screen-lg-min) {
+    font-size: $font-size;
+  }
+}

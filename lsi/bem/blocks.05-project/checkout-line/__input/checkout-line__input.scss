@@ -1,0 +1,7 @@
+.checkout-line__input {
+  float: left;
+  width: 70%;
+  @media (max-width: $screen-xs-max) {
+    width: 100%;
+  }
+}

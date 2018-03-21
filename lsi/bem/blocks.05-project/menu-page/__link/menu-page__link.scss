@@ -1,0 +1,19 @@
+.menu-page__link {
+  padding: 14px 24px;
+  display: block;
+  border-bottom: 1px solid #d4d4d4;
+  color: #303030;
+  font-size: 15px;
+  line-height: 1.2;
+  @media (max-width: $screen-md-max) {
+    font-size: 13px;
+  }
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    background: #fbfbfb;
+  }
+  .active > &{
+    color: $color_primary;
+  }
+}

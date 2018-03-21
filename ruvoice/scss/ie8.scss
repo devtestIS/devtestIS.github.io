@@ -1,0 +1,98 @@
+@import "compass/css3";
+
+.order-service{
+    .server-type{
+        -pie-box-shadow: none!important;
+        behavior:  url(PIE.htc);
+    }
+}
+
+.server-type{
+    -pie-box-shadow: 0px -4px 14.5px 0px rgba(0, 0, 0, 0.50);
+    behavior:  url(PIE.htc);
+}
+
+.try-free .try-free-tab li.active{
+    -pie-box-shadow: 0px -4px 14.5px 0px rgba(0, 0, 0, 0.50);
+    behavior:  url(PIE.htc);
+}
+
+.try-free .bg-word{
+    color: #e3eef0!important;
+    behavior:  url(PIE.htc);
+}
+
+.order-service{
+    input[type="radio"]{
+        display: block;
+        position: absolute;
+        z-index: -1;
+    }
+    input[type="checkbox"]{
+        display: block;
+        position: absolute;
+        z-index: -1;
+    }
+    .order-block{
+        .adwanced-options{
+            ul{
+                li{
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}
+
+.order-service .sing-in input[type='email'], .order-service .sing-in input[type='text'], .order-service .sing-in input[type='password']{
+    -pie-box-shadow: inset 3px 4px 5px rgba(0,0,0,0.07);
+    behavior:  url(PIE.htc);
+}
+
+.order-service .order-block .server-adresss .form-control{
+    -pie-box-shadow: inset 3px 4px 5px rgba(0, 0, 0, 0.07);
+    behavior:  url(PIE.htc);
+}
+
+.sum-slots td.active{
+    -pie-box-shadow: 1px 2px 10px rgba(37,37,37,0.15);
+    behavior:  url(PIE.htc);
+}
+
+.servers .data button{
+    position: relative;
+     -pie-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    behavior:  url(PIE.htc);
+}
+
+.servers .data .active:before{
+    -pie-background: linear-gradient(to bottom, #8ff359, #5ecd21); /*ie 6-9 via PIE*/
+    behavior:  url(PIE.htc);
+}
+
+.servers .data .disable:before{
+    -pie-background: linear-gradient(to bottom, #fb6b79, #e32f40); /*ie 6-9 via PIE*/
+    behavior:  url(PIE.htc);
+}
+
+.control-header .balance .fa-plus{
+        behavior:  url(PIE.htc);
+}
+
+.tickets button{
+        background-color: #fff;
+        position: relative;
+        -pie-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+        -pie-background: linear-gradient(bottom, #f1f1f1, #fff);
+        behavior:  url(PIE.htc);
+}
+
+.tickets .comment textarea{
+    position: relative;
+    -pie-box-shadow: inset 3px 4px 5px rgba(0,0,0,.07);
+    behavior:  url(PIE.htc);
+}
+
+.profile .ext{
+    line-height: 62px;
+}

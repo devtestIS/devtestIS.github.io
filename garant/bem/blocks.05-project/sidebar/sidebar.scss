@@ -1,0 +1,21 @@
+.sidebar {
+  transition: padding 0.3s;
+  padding-top: 30px;
+  position: relative;
+
+  &_active{
+    position: fixed;
+    top: 0px;
+    width: calc((1170px / 4) - 30px);
+    @media(max-width: $screen-md-max){
+      width: calc((970px / 4) - 30px);
+    }
+    @media(max-width: $screen-sm-max){
+      width: calc(((750px / 12) * 4) - 30px);
+    }
+  }
+
+  @media(max-width: $screen-xs-max){
+    margin-bottom: 30px;
+  }
+}

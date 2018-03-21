@@ -1,0 +1,9 @@
+.switch__over_up {
+    &:before{
+        border-color: #97a4b1 transparent transparent transparent;
+    }
+
+    &:after{
+        border-color: transparent transparent #1470cc transparent;
+    }
+}

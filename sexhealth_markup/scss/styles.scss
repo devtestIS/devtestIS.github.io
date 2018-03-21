@@ -1,0 +1,23 @@
+@charset "utf-8";
+@import "bootstrap";
+@import "fonts";
+@import "sprites";
+@import "header";
+@import "main";
+@import "footer";
+
+html, body{
+    min-width: 1000px;
+}
+
+body{
+    position: relative;
+}
+
+header, footer, .content{
+    min-width: 1000px;
+}
+
+a{
+    font-family: 'PT Sans', sans-serif;
+}

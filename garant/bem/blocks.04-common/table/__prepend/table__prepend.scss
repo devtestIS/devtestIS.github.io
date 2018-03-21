@@ -1,0 +1,6 @@
+.table__prepend {
+  display: none;
+  @media (max-width: $screen-xs-max) {
+    display: block;
+  }
+}

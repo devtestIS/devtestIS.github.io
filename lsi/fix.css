@@ -1,0 +1,31 @@
+.phone_tel{
+    color: black;
+    text-decoration: none;
+}
+.phone_tel:hover
+{
+    color: black;
+    text-decoration: none;
+}
+.phone_tel_det:hover
+{
+    color: #303030;
+    text-decoration: none;
+}
+.phone_tel:focus
+{
+    color: black;
+    text-decoration: none;
+}
+.phone_tel_det:focus
+{
+    color: #303030;
+    text-decoration: none;
+}
+.ya_market_list
+{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 6px;
+}

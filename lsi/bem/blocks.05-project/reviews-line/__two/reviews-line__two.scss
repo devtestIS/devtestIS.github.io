@@ -1,0 +1,6 @@
+.reviews-line__two {
+  margin-left: 215px;
+  @media (max-width: $screen-xs-max) {
+    margin-left: 0;
+  }
+}

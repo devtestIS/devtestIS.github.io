@@ -1,0 +1,9 @@
+.buy-one-click {
+  margin-top: 2px;
+  @media (max-width: $screen-md-max) {
+
+  }
+  @media (max-width: $screen-sm-max) {
+    //display: inline-block;
+  }
+}

@@ -1,0 +1,10 @@
+.checkout-line__label {
+  float: left;
+  font-weight: 600;
+  width: 26%;
+  padding-top: 6px;
+  @media (max-width: $screen-xs-max) {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}

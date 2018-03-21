@@ -1,0 +1,5 @@
+.news-list__item  {
+  & + .news-list__item {
+    margin-top: 26px;
+  }
+}

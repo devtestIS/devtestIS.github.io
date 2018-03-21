@@ -1,0 +1,8 @@
+.total-shipping {
+  font-size: 15px;
+  position: absolute;
+  left: 8px;
+  @media (max-width: $screen-sm-max) {
+    position: static;
+  }
+}

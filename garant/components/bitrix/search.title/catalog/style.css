@@ -1,0 +1,26 @@
+.popup_main {
+    width: 100%;
+    background-color: white;
+    border-spacing: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.popup_main a {
+    color: #555555;
+}
+
+.popup_main__item td {
+    padding: 5px;
+}
+
+.popup_main__showAll {
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.popup_main__showAll td {
+    padding: 5px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}

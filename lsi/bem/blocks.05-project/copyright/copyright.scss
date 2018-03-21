@@ -1,0 +1,8 @@
+.copyright {
+  color: #c6c6c6;
+  font-size: 13px;
+  float: left;
+  @media (max-width: $screen-sm-max) {
+    float: none;
+  }
+}

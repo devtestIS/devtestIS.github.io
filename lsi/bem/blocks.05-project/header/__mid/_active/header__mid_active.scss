@@ -1,0 +1,14 @@
+.header__mid_active {
+  position: fixed;
+  top: 0px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+
+  &_product{
+    .header-main-line__col{
+      display: none;
+      &_column_one{
+        display: block;
+      }
+    }
+  }
+}

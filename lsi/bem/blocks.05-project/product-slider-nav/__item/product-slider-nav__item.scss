@@ -1,0 +1,10 @@
+.product-slider-nav__item {
+  float: left;
+  min-height: 1px;
+  border: 1px solid #c6c6c6;
+  margin: 0 7px;
+  cursor: pointer;
+  &.slick-current {
+    border-color: #d00;
+  }
+}

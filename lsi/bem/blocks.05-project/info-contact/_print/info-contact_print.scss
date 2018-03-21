@@ -1,0 +1,12 @@
+.info-contact_print {
+  .info-contact__data {
+    @media (max-width: $screen-md-max) {
+      width: 55%;
+    }
+  }
+  .info-contact__methods {
+    @media (max-width: $screen-md-max) {
+      width: 45%;
+    }
+  }
+}

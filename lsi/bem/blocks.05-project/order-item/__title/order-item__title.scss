@@ -1,0 +1,12 @@
+.order-item__title {
+  font-weight: bold;
+  vertical-align: middle;
+  display: table-cell;
+  float: left;
+  margin-top: 9px;
+  width: 65%;
+  @media (max-width: $screen-md-max) {
+    float: none;
+    width: 100%;
+  }
+}

@@ -1,0 +1,356 @@
+@import "compass/css3";
+$sprites-sprite-dimensions: true;
+@import "compass/utilities/sprites";
+@import "sprites/*.png";
+@include all-sprites-sprites;
+
+input{
+    text-overflow: ellipsis; 
+}
+
+.order-service{
+    margin-bottom: 78px;
+    .line{
+        border-bottom: 1px solid #e9e9e9;
+        margin-bottom: 38px;
+    }
+    h1{
+        color:  #3a3a3a;
+        font-size: 60px; 
+        font-weight: 300;
+        line-height: 54px;
+        margin-bottom: 62px;
+    }
+    input[type="radio"]{
+        display: none;
+    }
+    input[type="radio"] + i{
+        margin: 0 10px 0 0;
+        display: inline-block;
+        @extend .sprites-radio;
+    }
+    input[type="radio"] + i + span{
+        color:  #333333;
+        font-size: 16px; 
+        font-weight: 400;
+        border-bottom: 1px dotted #333333;
+    }
+    input[type="radio"]:checked + i{
+        @extend .sprites-radio-checked;
+    }
+    input[type="radio"]:checked + i + span{
+        color:  #00a4e1;
+        font-size: 16px; 
+        font-weight: 400;
+        border-bottom: none;
+    }
+    input[type="checkbox"]{
+        display: none;
+    }
+    input[type="checkbox"] + i{
+        margin: 0 6px 0 0;
+        display: inline-block;
+        @extend .sprites-checkbox;
+    }
+    input[type="checkbox"] + i + span{
+        color:  #333333;
+        font-size: 16px; 
+        font-weight: 400;
+        border-bottom: 1px dotted #333333;
+    }
+    input[type="checkbox"]:checked + i{
+        @extend .sprites-checkbox-checked;
+    }
+    input[type="checkbox"]:checked + i + span{
+        color:  #00a4e1;
+        font-size: 16px; 
+        font-weight: 400;
+        border-bottom: none;
+    }
+    .sing-in{
+        padding-bottom: 34px;
+        .fields{
+            padding-left: 66px;
+        }
+        input[type="email"], input[type="text"], input[type="password"]{
+            position: relative;
+            width: 290px;
+            height: 60px;
+            line-height: 60px;
+            @include box-shadow(inset 3px 4px 5px rgba(0,0,0,.07));
+	        border: solid 1px #cdcdcd;
+            &:focus + label{
+                display: none;
+            }
+            &.focus + label{
+                display: none;
+            }
+        }
+        input[type="email"] +label, input[type="text"] +label, input[type="password"] + label{
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                color:  #666666;
+                font-size: 16px; 
+                font-weight: 400;
+                z-index: 5;
+                left: 34px;
+                top: 22px;
+                i{
+                    color:  #cc3333;
+                }
+            }
+        li{
+            margin: 5px 0 14px 0;
+        }
+    }
+    .server-type{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        box-shadow: none;
+        .server-type-wrapper{
+            padding: 0;
+            .slots{
+                padding-left: 66px;
+                .slider-container{
+                    margin: 38px 0 53px 0;
+                }
+            }
+        }
+    }
+    .lease, .location{
+        .description{
+            display: inline-block;
+            color:  #333333;
+            font-size: 16px; 
+            font-weight: 400;
+            margin-bottom: 17px;
+        }
+        ul{
+            margin: 0 0 42px 0;
+        }
+        ul>li{
+            display: inline-block;
+        }
+    }
+    .lease{
+        input[type="radio"] + i{
+            margin: 0 6px 0 0;
+        }
+        input[type="radio"] + i + span{
+            font-size: 14px; 
+        }
+            input[type="radio"]:checked + i + span{
+                font-size: 14px; 
+                font-weight: 700;
+            }
+            li{
+                margin: 0 16px 0 0;
+            }
+        }
+    .location{
+        input[type="radio"] + i + span, input[type="radio"]:checked + i + span{
+            color:  #333333;
+            font-size: 14px; 
+            font-weight: 400;
+            line-height: 20px;
+            border-bottom: none;
+            strong{
+                font-weight: 700;
+            }
+        }
+        ul{
+            margin: 0 0 29px -25px;
+        }
+        li{
+            width: 180px;
+            margin-left: 25px;
+            margin-bottom: 8px;
+        }
+    }
+    .order-block{
+        padding-top: 3px;
+        .server-adresss{
+            padding-left: 66px;
+            width: 100%;
+            .form-control{
+                vertical-align: middle;
+                height: 60px;
+                line-height: 60px;
+                color:  #999999;
+                font-size: 16px; 
+                font-weight: 400;
+                text-align: left;
+                @include box-shadow(inset 3px 4px 5px rgba(0,0,0,.07));
+	            border: solid 1px #cdcdcd;
+            }
+            .btn{
+                height: 60px;
+                line-height: 60px;
+                background: #f9f9f9;
+                border-color: #cdcdcd;
+                width: 150px;
+                color:  #666666;
+                font-size: 14px; 
+                font-weight: 400;
+                text-align: left;
+                padding: 0px 27px;
+                .caret{
+                    margin-left: 10px;
+                    margin-top: -5px;
+                }
+            }
+            .dropdown-menu{
+                background: #f9f9f9;
+                border: 1px solid #cdcdcd;
+                min-width: 150px;
+                margin: -1px 0 0;
+                a{
+                    color:  #666666;
+                    font-size: 13px; 
+                    font-weight: 400;
+                    text-align: left;
+                    &:hover{
+                        background: #f9f9f9;
+                    }
+                }
+            }
+        }
+        .domen-options{
+            margin-bottom: 37px;
+            .domen{
+                li{
+                    margin: 0 0 13px 0;
+                }
+            }
+        }
+        .adwanced-options{
+            padding: 0 30px;
+            margin-bottom: 43px;
+            line-height: 80px;
+            background: #f1f5f6;
+            ul{
+                li{
+                    display: inline-block;
+                    margin-left: 35px;
+                    &:first-child{
+                        margin-left: 0px;
+                    }
+                }
+            }
+            .answer{
+                margin: -6px 0 0 7px;
+                border: solid 1px #dbdbdb;
+                @include background-image(linear-gradient(bottom, #ebebeb, #fff));
+                padding: 0 6px;
+                border-radius: 50%;
+                color:  #afafaf;
+                font-size: 12px; 
+                font-weight: 700;
+                line-height: 18px;
+                vertical-align: middle;
+        }
+            .blue-answer{
+                margin: -3px 0 0 6px;
+                border: solid 1px #1cb0e7;
+                @include background-image(linear-gradient(bottom, #ebebeb, #fff));
+                line-height: 18px;
+                color:  #1cb0e7;
+                font-size: 12px; 
+                font-weight: 700;
+                vertical-align: middle;
+                border-radius: 50%;
+                padding: 0 6.5px;
+            }
+            .popover{
+                margin-left: -241px;
+                margin-top: -60px;
+                width: 252px;
+                color:  #757575;
+                font-size: 11px; 
+                font-weight: 400;
+                text-align: left;
+                border-top: 3px solid #1cb0e7;
+                @include box-shadow(1px 1px 5px rgba(0,0,0,.3));
+                .popover-content{
+                    padding: 13px 14px;
+                }
+                .arrow{
+                    margin-left: 240px;
+                    top: 69px !important;
+                    border-left: 0px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-top: 10px solid #d1d1d1;
+                    &:after{
+                        border-left: 0px solid transparent;
+                        border-right: 10px solid transparent;
+                        border-top: 10px solid #fff;
+                        margin-left: -2px;
+                    }
+                }
+            }
+        }
+        .payment{
+        padding: 20px 20px;
+        background: #fff3c3;
+        .form-control{
+            margin-left: 10px;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 21px;
+            vertical-align: middle;
+        }
+        .value{
+            width: 90px;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 16px;
+            color:  #333333;
+            font-size: 14px; 
+            font-weight: 400;
+            .caret{
+                margin-left: 8px;
+                margin-top: -4px;
+            }
+        }
+        .dropdown-menu{
+            background: #fff;
+            a{
+                color:  #333333;
+                font-size: 14px; 
+                font-weight: 400;
+                &:hover{
+                    background-color: transparent;
+                }
+            }
+        }
+        .order{
+            background: #1cb0e7;
+            color:  #ffffff;
+            font-size: 17px; 
+            font-weight: 700;
+            line-height: 50px;
+            width: 240px;
+            height: 50px;
+            margin-left: 10px;
+            text-transform: uppercase;
+        }
+        span{
+            color:  #333333;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 28px;
+            &.payable{
+                font-size: 16px; 
+                font-weight: 400;
+                line-height: 26px;
+                strong{
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    }
+}

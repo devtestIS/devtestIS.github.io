@@ -1,0 +1,25 @@
+.selectize-control .selectize-input.items .item
+{
+    margin-right: 5px;
+    color: white;
+    background-color: #00adec;
+    padding: .4em .6em .4em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+.selectize-control .selectize-input.items .item.active
+{
+    cursor: pointer;
+    background-color: #00adec;
+}
+
+.selectize-control .selectize-input.items .item .remove
+{
+    padding: 4px 0;
+}

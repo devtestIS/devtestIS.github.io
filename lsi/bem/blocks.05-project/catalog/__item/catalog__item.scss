@@ -1,0 +1,26 @@
+.catalog__item {
+    width: 16.666666%;
+    padding: 5px 10px;
+    float: left;
+    text-align: center;
+    height: 225px;
+    font-size: 15px;
+    font-family: $custom-fonts_font-PT;
+    @media (max-width: $screen-sm-max) {
+        font-size: 14px;
+        line-height: 1.2;
+        padding: 4px 10px;
+        width: 20%;
+        height: 160px;
+    }
+    @media (max-width: $screen-xs-max) {
+        float: none;
+        height: auto;
+        width: 100%;
+        text-align: left;
+        clear: both;
+        font-size: 15px;
+        border-bottom: 1px solid #EFEFEF;
+        padding: 3px 0px;
+    }
+}

@@ -1,0 +1,20 @@
+.header__logo {
+  display: none;
+
+  @media (min-width: $screen-sm-min) {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: $brand-primary;
+    color: lighten($brand-primary, 100%);
+    padding: $grid-gutter-width/2;
+    .icomoon{
+      font-size: 90px;
+      color: lighten($brand-primary, 100%);
+    }
+  }
+  @media (min-width: $screen-md-min) {
+    padding: $grid-gutter-width;
+  }
+}

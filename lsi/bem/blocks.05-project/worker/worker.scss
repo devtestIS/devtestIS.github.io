@@ -1,0 +1,22 @@
+.worker {
+    position: absolute;
+
+    @media (max-width: $screen-xs-max) {
+        display: none;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        display: none;
+    }
+
+    @media (min-width: $screen-md-min) {
+        display: block;
+        right: -78px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        display: block;
+        right: -21px;
+        bottom: 1px;
+    }
+}

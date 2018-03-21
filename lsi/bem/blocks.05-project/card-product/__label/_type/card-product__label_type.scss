@@ -1,0 +1,32 @@
+.card-product__label_type {
+  &_new {
+    background: #00c853;
+  }
+  &_our-choice {
+    background: #0091ea;
+  }
+  &_sale {
+    background: #ff5722;
+  }
+  &_action {
+    background: #f50057;
+  }
+  &_season {
+    background: #f24841;
+  }
+  &_guarantee {
+    background: #00c853;
+  }
+  &_availability {
+    color: #00a946;
+    float: right;
+  }
+  &_not-available {
+    color: #919191;
+    float: right;
+    font-size: 13px;
+  }
+  &_hit {
+    background: #FA2E0D;
+  }
+}

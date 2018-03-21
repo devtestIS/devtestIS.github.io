@@ -1,0 +1,12 @@
+.company__value {
+    width: 100%;
+    border: 1px dashed #97a4b1;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin-bottom: 13px;
+}
+
+textarea.company__value {
+    overflow: hidden;
+    resize: none;
+}

@@ -1,0 +1,20 @@
+.list-marked__item {
+    position: relative;
+    padding-left: 52px;
+    color: $tooltip-color;
+    font-size: 18px;
+    font-family: $font-PT;
+    line-height: 20px;
+    margin-bottom: 16px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 2px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 4px solid $brand-primary;
+    }
+}

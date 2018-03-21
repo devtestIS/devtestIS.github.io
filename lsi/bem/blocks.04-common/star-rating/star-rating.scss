@@ -1,0 +1,21 @@
+.star-rating{
+  font-size: 0;
+  position: relative;
+  &[data-count]{
+    &:before{
+      content: '('attr(data-count)')';
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+  &:not(.star-rating_disabled) {
+    .star-rating__icon:hover,
+    .star-rating__icon:hover ~ .star-rating__icon,
+    .star-rating__input:checked ~ .star-rating__icon {
+      color: $brand-primary;
+      @media print {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.section-tags__item {
+    flex-shrink: 0;
+
+    @media (max-width: $screen-xs-max) {
+        margin-bottom: 5px;
+        padding: 0 2px;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        margin-bottom: 10px;
+        padding: 0 2px;
+    }
+
+    @media (min-width: $screen-md-min) {
+        padding: 0 3px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        padding: 0 3px;
+    }
+}

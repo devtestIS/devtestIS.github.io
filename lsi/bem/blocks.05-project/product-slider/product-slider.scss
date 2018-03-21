@@ -1,0 +1,9 @@
+.product-slider {
+  padding: 0 27px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  display: none;
+  &.slick-initialized {
+    display: block;
+  }
+}

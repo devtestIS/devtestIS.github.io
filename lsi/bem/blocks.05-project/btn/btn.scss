@@ -1,0 +1,21 @@
+.btn {
+  font-size: 15px;
+  &-info {
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+      background: #fff;
+    }
+  }
+  &.disabled {
+    &, &:hover, &:focus, &:active{
+      @include opacity(1);
+      filter: grayscale(100%);
+    }
+  }
+  &.btn-lg {
+    font-size: 20px;
+  }
+}

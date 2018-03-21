@@ -1,0 +1,7 @@
+.checkout-line {
+  @include clearfix;
+  margin-bottom: 30px;
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 5px;
+  }
+}

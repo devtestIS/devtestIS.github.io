@@ -1,0 +1,16 @@
+.main-nav__collapse {
+  @media (max-width: $screen-xs-max) {
+    z-index: $zindex-dropdown;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    background: lighten($brand-primary, 100%);
+    width: 100%;
+    transition: visibility, opacity 0.35s ease 0.2s;
+
+    .open & {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

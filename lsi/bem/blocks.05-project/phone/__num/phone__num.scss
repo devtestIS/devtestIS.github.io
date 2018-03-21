@@ -1,0 +1,8 @@
+.phone__num {
+  font-size: 21px;
+  font-weight: 700;
+  color: #000;
+  @media (max-width: 430px) {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,7 @@
+.radio_disabled {
+  .radio__input {
+    opacity: 0.5;
+    filter: contrast(0.8);
+    cursor: not-allowed;
+  }
+}

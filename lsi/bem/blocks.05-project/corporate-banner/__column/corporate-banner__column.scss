@@ -1,0 +1,29 @@
+.corporate-banner__column {
+    display: flex;
+    align-items: center;
+    margin-bottom: 55px;
+
+    @include make-sm-column-offset(0);
+    @include make-sm-column-offset(0);
+    @include make-md-column-offset(1);
+    @include make-lg-column-offset(1);
+
+    @include make-xs-column(12);
+    @include make-sm-column(6);
+    @include make-md-column(4);
+    @include make-lg-column(4);
+
+    span {
+        display: block;
+        margin-top: 3px;
+        color: #fff;
+        font-family: $font-PT;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+    }
+
+    @media (max-width: $screen-xs-min) {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,6 @@
+.account-indent {
+  height: 200px;
+  @media (max-width: $screen-sm-max) {
+    display: none;
+  }
+}

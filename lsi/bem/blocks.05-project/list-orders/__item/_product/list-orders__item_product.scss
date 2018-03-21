@@ -1,0 +1,8 @@
+.list-orders__item_product {
+  border-bottom: 1px solid #d4d4d4;
+  padding: 10px 10px;
+  @media (min-width: $screen-md-min) {
+    display: table;
+    width: 100%;
+  }
+}

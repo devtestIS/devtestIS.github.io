@@ -1,0 +1,22 @@
+.pagination__next {
+  .pagination__link {
+    text-decoration: underline;
+    &:hover,
+    &:focus {
+      border-color: transparent;
+    }
+      margin-left: 10px;
+  }
+  i {
+    display: none;
+    @media (max-width: $screen-md-max) {
+      display: inline-block;
+    }
+  }
+  span {
+    display: inline-block;
+    @media (max-width: $screen-md-max) {
+      display: none;
+    }
+  }
+}

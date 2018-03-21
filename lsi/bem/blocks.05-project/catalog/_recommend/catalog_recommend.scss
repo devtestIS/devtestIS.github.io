@@ -1,0 +1,11 @@
+.catalog_recommend {
+  box-shadow: none;
+  @media (max-width: $screen-sm-max) and (min-width: $screen-sm-min) {
+    .catalog__item {
+      &:nth-child(6) {
+        display: none;
+      }
+    }
+  }
+
+}

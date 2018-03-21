@@ -1,0 +1,6 @@
+.pseudo-table__tbody {
+  @media (min-width: $screen-md-min) {
+    display: table-row-group;
+  }
+
+}

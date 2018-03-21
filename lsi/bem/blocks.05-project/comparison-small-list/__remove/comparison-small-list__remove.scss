@@ -1,0 +1,17 @@
+.comparison-small-list__remove {
+  width: 14px;
+  background: #f24841;
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 14px;
+  display: inline-block;
+  margin-left: 13px;
+  &:hover {
+    background: #dd413b;
+    color: #fff;
+    text-decoration: none;
+  }
+}

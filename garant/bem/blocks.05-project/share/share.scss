@@ -1,0 +1,29 @@
+.share {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  &__li{
+    margin: 0 $grid-gutter-width/6;
+    .a, a{
+      font-size: $font-size-large;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      height: $grid-gutter-width;
+      width: $grid-gutter-width;
+      border-radius: $border-radius-small;
+      background-color: $gray-lighter;
+      &, &:hover, &:focus, &:active{ color: lighten($brand-primary, 100%)}
+
+      &.fa-youtube{background-color: rgb(205, 51, 45)}
+      &.fa-vk{background-color: rgb(78, 131, 183)}
+      &.fa-facebook{background-color: rgb(59, 89, 152)}
+      &.fa-twitter{background-color: rgb(64, 153, 255)}
+    }
+  }
+}

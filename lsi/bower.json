@@ -1,0 +1,34 @@
+{
+  "author": "Shkarupa Alex",
+  "name": "3b-project-stub",
+  "email": "alex@intervolga.ru",
+  "version": "0.0.1",
+  "ignore": [
+    ".enb/tmp",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "html5shiv": "latest",
+    "respond": "latest",
+    "modernizr": "latest",
+    "fontfaceobserver": "latest",
+    "jquery": "jquery#1",
+    "jquery-throttle-debounce": "https://github.com/cowboy/jquery-throttle-debounce.git",
+    "carouFredSel": "latest",
+    "bootstrap-sass": "latest",
+    "font-awesome": "latest",
+    "jquery-ui": "1.11.3",
+    "jqueryui-touch-punch": "latest",
+    "holderjs": "latest",
+    "jQuery.dotdotdot": "latest",
+    "slick-carousel": "^1.5.9",
+    "chosen": "^1.5.1",
+    "lightbox2": "^2.8.2",
+    "readmore-js": "^2.2.0",
+    "jquery-bar-rating": "^1.2.2"
+  },
+  "resolutions": {
+    "jquery": "1.9.1 - 3"
+  }
+}

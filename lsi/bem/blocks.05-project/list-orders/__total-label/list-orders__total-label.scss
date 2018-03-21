@@ -1,0 +1,10 @@
+.list-orders__total-label {
+  font-size: 21px;
+  font-weight: bold;
+  display: table-cell;
+  padding-right: 75px;
+  vertical-align: top;
+  @media (min-width: $screen-sm-min) {
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,11 @@
+.grid-turned{
+  @media (max-width: $screen-md-max) {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  &__bottom{
+    @media (max-width: $screen-md-max) {
+      order: 10000;
+    }
+  }
+}

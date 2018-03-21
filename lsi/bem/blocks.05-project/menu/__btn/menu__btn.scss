@@ -1,0 +1,14 @@
+.menu__btn {
+  display: none;
+  @media (max-width: $screen-xs-max) {
+    display: inline-block;
+    border-color: #fff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: right;
+    margin-right: 15px;
+    .menu-bar__icon {
+      background-color: #fff;
+    }
+  }
+}

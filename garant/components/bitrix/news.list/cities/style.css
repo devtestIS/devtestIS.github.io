@@ -1,0 +1,14 @@
+.p-custom
+{
+    font-family: "Open Sans", "PT Sans", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #3b4256;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.p-custom-margin
+{
+    margin-top: 36px;
+}

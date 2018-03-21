@@ -1,0 +1,15 @@
+.pseudo-table_striped {
+  &_even {
+    > .pseudo-table__tbody > .pseudo-table__tr:nth-of-type(even) {
+      background-color: $table-bg-accent;
+      @media (max-width: $screen-sm-max) {
+        background-color: #f0f0f0;
+      }
+    }
+  }
+  &_odd {
+    > .pseudo-table__tbody > .pseudo-table__tr:nth-of-type(odd) {
+      background-color: $table-bg-accent;
+    }
+  }
+}

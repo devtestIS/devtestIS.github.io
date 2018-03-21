@@ -1,0 +1,28 @@
+.dropdown__li {
+    text-align: left;
+    font-size: 16px;
+    border-bottom: none;
+    padding: 3px;
+
+
+ &:last-child {
+    border: none;
+  }
+  .dropdown-menu > & > a {
+    color: $link-color;
+    text-decoration: none;
+    &:hover{
+      background: transparent;
+      color: $link-color;
+      text-decoration: underline;
+    }
+  }
+
+
+  @media(max-width: $screen-xs-max){
+    padding: 0;
+    font-weight: 100;
+    font-size: 16px;
+  }
+
+}

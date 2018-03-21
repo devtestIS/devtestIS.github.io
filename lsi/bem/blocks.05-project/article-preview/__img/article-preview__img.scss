@@ -1,0 +1,9 @@
+.article-preview__img {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  @media (max-width: $screen-xs-max) {
+    float: none;
+  }
+}

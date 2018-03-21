@@ -1,0 +1,27 @@
+.order-detailed__status_color {
+  &_success {
+    color: #84ac17;
+    i{
+      color: #919191;
+    }
+  }
+  &_warning {
+    color: #ffab00;
+    i{
+      color: #919191;
+    }
+  }
+}
+.order-detailed__status_color_n,
+.order-detailed__status_color_w {
+  color: #ffab00;
+}
+
+.order-detailed__status_color_p,
+.order-detailed__status_color_f {
+  color: #95c11e;
+}
+
+.order-detailed__status_color_c {
+  color: #f24841;
+}

@@ -1,0 +1,19 @@
+.main-nav__li {
+  position: relative;
+  padding: $x 0;
+  .a, a{
+    position: relative;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.35s ease;
+    &:hover{ border-bottom-color: rgba(20, 112, 204, 0.3) }
+    @media (min-width: $screen-sm-min) {
+      display: block;
+    }
+  }
+
+  .main-nav__dropdown & {
+    @media (min-width: $screen-sm-min) {
+      padding: $s;
+    }
+  }
+}

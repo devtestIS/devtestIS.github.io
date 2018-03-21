@@ -1,0 +1,9 @@
+.product-detail__two {
+  min-height: 1px;
+  width: 50%;
+  float: left;
+  @media (max-width: $screen-sm-max) {
+    float: none;
+    width: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+.product-info__label {
+//  display: table-cell;
+  padding-right: 8px;
+  position: relative;
+  overflow: hidden;
+  font-size: 15px;
+  color: #777777;
+//  margin-bottom: 9px;
+  font-family: $font-PT;
+  vertical-align: bottom;
+  flex: 20 0 auto;
+  max-width: 100%;
+  &:after {
+    content: '.........................................................................................................................................................................................................................................................';
+    position: absolute;
+    height: 20px;
+    overflow: hidden;
+//    left: 0;
+//    right: 0;
+  }
+}

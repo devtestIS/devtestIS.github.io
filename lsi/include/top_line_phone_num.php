@@ -1,0 +1,1 @@
+<a class="phone__num phone_tel" href="tel:+78005009501">8 800 500 95 01</a>

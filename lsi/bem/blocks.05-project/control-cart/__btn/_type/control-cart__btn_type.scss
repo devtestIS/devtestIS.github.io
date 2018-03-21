@@ -1,0 +1,21 @@
+.control-cart__btn_type {
+  &_basket {
+    &:before {
+      background-image: url("../../img/icone_basket.png");
+    }
+  }
+  &_comparison {
+    &:before {
+      background-image: url("../../img/icone_comparison.png");
+    }
+  }
+  &_star {
+    &:before {
+      color: #f24841;
+      vertical-align: text-top;
+      font-family: FontAwesome;
+      visibility: visible;
+      content: "\f005"
+    }
+  }
+}

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=1">
+    <title>Аптека +</title>
+
+    <!-- stylesheet -->
+	<link href="css/style.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="css/ie8.css" />
+	<![endif]-->
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<!--[if (gte IE 6)&(lte IE 8)]>
+	<script type="text/javascript" src="js/selectivizr.js"></script>
+	<noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+	<![endif]-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+		  <header class="container">
+			  <div class="row header-top">
+				  <div class="col-xs-4">
+					  <div class="row">
+						  <div class="col-xs-6">
+							  <a href="javascript:void(0)">Список отделений</a>
+						  </div>
+						  <div class="col-xs-3 col-xs-offset-3 button-people">
+							  <button class="pull-right"><i class="fa fa-users"></i></button>
+							  <button class="active-btn pull-right"><i class="fa fa-user"></i></button>
+						  </div>
+					  </div>
+				  </div>
+				  <div class="col-xs-3 col-xs-offset-1">
+					  <a href="javascript:void(0)" class="pull-left delivery">Доставка</a><a href="javascript:void(0)" class="pull-left pay">Оплата</a>
+				  </div>
+				  <div class="col-xs-3 col-xs-offset-1">
+					  <button class="btn-green sign-in" data-toggle="modal" data-target="#sign-in">ВОЙТИ</button>
+						<!-- Modal -->
+						<div class="modal fade sign-in-form" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						  <div class="modal-dialog modal-lg">
+							<div class="modal-content">
+							  <div class="modal-header">
+								  <div class="top-h sprites-form-top"></div>
+								  <div class="content-h">
+									  <div class="border-h">
+										  <button type="button" class="close" data-dismiss="modal"><span class="sprites-close close-icon"></span></button>
+										  <h1 class="modal-title" id="myModalLabel1">ВХОД</h1>
+										  <span class="message-h">Для входа в личный кабинет введите Ваш E-mail и пароль.
+											  Либо зарегистрируйтесь что бы стать частью системы.
+										  </span>
+										  <button type="submit" class="reg">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+									  </div>
+								  </div>
+								  <div class="top-b sprites-form-bottom"></div>
+									
+							  </div>
+							  <div class="modal-body">
+								  <form class="border-body">
+									  <input type="email" placeholder="Ваш E-mail" name="sing-in-email">
+									  <input type="password" name="password" placeholder="Пароль">
+								  </form>
+							  </div>
+							  <div class="modal-footer sprites-sing-in-bottom">
+								  <button type="submit" data-dismiss="modal">ВОЙТИ</button>
+							  </div>
+								<div class="password-restore-bg">
+									<div class="password-restore">
+										<button type="button" class="close" data-dismiss="modal"><span class="sprites-close close-icon"></span></button>
+										<h1>Восстановить пароль</h1>
+										<span>Пожалуйста, введите свою почту для смены пароля.</span>
+										<form class="restore-submit">
+											<input type="email" placeholder="Электронная почта" name="restore-email">
+											<button>Восстановить пароль</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						  </div>
+						</div>
+					  <a href="#" class="registry-link" data-toggle="modal" data-target="#registration">Регистрация</a>
+					  <!-- Modal -->
+					  <div class="modal fade modal-form" id="registration" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						  <div class="modal-dialog">
+							  <div class="modal-content">
+								  <div class="border">
+									  <div class="modal-header">
+										  <button type="button" class="close" data-dismiss="modal"><span class="sprites-close close-icon"></span></button>
+										  <h1 class="modal-title" id="myModalLabel2">РЕГИСТРАЦИЯ</h1>
+										  <span class="message">Каталог аптеки отличается для разных типов пользователей. 
+											  Пожалуйста, выберите, к какому типу пользователей вы относитесь.</span>
+									  </div>
+									  <div class="modal-body">
+										  <form class="f-form">
+											  <div class="row">
+												  <div class="col-xs-6"><input type="radio" id="u-face" name="face" value="u-face" checked="checked"><label for="u-face"><span>ЮРИДИЧЕСКОЕ ЛИЦО</span></label></div>
+												  <div class="col-xs-6"><input type="radio" id="f-face" name="face" value="f-face"><label for="f-face"><span>ФИЗИЧЕСКОЕ ЛИЦО</span></label></div>
+											  </div>
+										  </form>
+										  <form class="u-face">
+											  <input type="text" placeholder="Наименование организации">
+											  <div class="row">
+												  <div class="col-xs-6">
+													  <input type="text" placeholder="ИНН">
+												  </div>
+												  <div class="col-xs-6">
+													  <input type="text" placeholder="КПП">
+												  </div>
+											  </div>
+											  <input type="text" placeholder="Юридический адрес">
+											  <input type="text" placeholder="Почтовый адрес">
+											  <input type="text" placeholder="Банковские реквизиты">
+											  <input type="text" placeholder="Контактное лицо">
+											  <input type="email" placeholder="Адрес электронной почты">
+											  <input type="password" placeholder="Пароль">
+											  <input type="password" placeholder="Повторение пароля">
+										  </form>
+									  </div>
+									  <div class="modal-footer">
+										  <button type="submit" class="modal-submit" data-dismiss="modal">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+									  </div>
+								  </div>
+							  </div>
+						  </div>
+					  </div>
+				  </div>
+			  </div>
+			  <div class="row header-bottom">
+				  <div class="col-xs-4">
+						  <a href="javascript:void(0)"><img src="images/logo.png" alt="" class="logo"></a>
+				  </div>
+				  <div class="col-xs-3 col-xs-offset-1">
+					  <span class="cart"><strong>Корзина:</strong> </span>
+					  <a href="javascript:void(0)" class="blue-color">10 товаров на 15 000 рублей</a>
+				  </div>
+				  <div class="col-xs-3 col-xs-offset-1">
+					  <span class="phone"> +7 (8443) <strong>31-71-71</strong></span>
+					  <a href="#" class="blue-color" data-toggle="modal" data-target="#feedback">Написать письмо</a>
+					  <!-- Modal -->
+					  <div class="modal fade modal-form" id="feedback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						  <div class="modal-dialog">
+							  <div class="modal-content">
+								  <div class="border">
+									  <div class="modal-header">
+										  <button type="button" class="close" data-dismiss="modal"><span class="sprites-close close-icon"></span></button>
+										  <h1 class="modal-title" id="myModalLabel">ОБРАТНАЯ СВЯЗЬ</h1>
+										  <span class="message">Каталог аптеки отличается для разных типов пользователей. 
+											  Пожалуйста, выберите, к какому типу пользователей вы относитесь.</span>
+									  </div>
+									  <div class="modal-body">
+										  <form class="u-face">
+											  <input type="text" placeholder="ФИО">
+											  <input type="text" placeholder="Тема письма">
+											  <input type="text" placeholder="Номер телефона">
+											  <input type="email" placeholder="Адрес электронной почты">
+											  <textarea name="review" id="review" placeholder="Текст отзыва"></textarea>
+										  </form>
+									  </div>
+									  <div class="modal-footer">
+										  <button type="submit" class="modal-submit" data-dismiss="modal">Отправить</button>
+									  </div>
+								  </div>
+							  </div>
+						  </div>
+					  </div>
+				  </div>
+			  </div>
+			  <nav class="row">
+				  <div class="col-xs-2">
+					  <a href="javascript:void(0)">О компании</a>
+				  </div>
+				  <div class="col-xs-2">
+					  <a href="javascript:void(0)">Каталог товаров</a>
+				  </div>
+				  <div class="col-xs-3">
+					  <a href="javascript:void(0)">Распознать рецепт врача</a>
+				  </div>
+				  <div class="col-xs-1">
+					  <a href="javascript:void(0)">Контакты</a>
+				  </div>
+				  <div class="col-xs-4">
+					  <a href="javascript:void(0)">Скидки и дисконтные программы</a>
+				  </div>
+			  </nav>
+		  </header>
+		  <div class="content-discount container">
+			  <ol class="breadcrumb">
+				<li><a href="javascript:void(0)">Главная</a></li>
+				<li></li>
+			</ol>
+			  <h1>Скидки и дисконтные программы</h1>
+			  <div class="actions-block">
+				  <div class="row actions-panel">
+					  <div class="col-xs-2">
+						  <img src="images/tmp/discount-icon-1.png" alt="img">
+					  </div>
+					  <div class="col-xs-10">
+						  <a href="javascript:void(0)">Любимые товары по лучшей цене</a>
+						  <p>5 заранее выбранных товаров, начальная скидка 7% + 1% за каждую купленную упаковку (до 15% процентов), скидка на остальной ассортимент 5% при сумме покупок за три месяца к моменту покупки выше 3тыс рублей</p>
+					  </div>
+				  </div>
+				  <div class="row actions-panel">
+					  <div class="col-xs-2">
+						  <img src="images/tmp/discount-icon-2.png" alt="img">
+					  </div>
+					  <div class="col-xs-10">
+						  <a href="javascript:void(0)">Накопительная система</a>
+						  <p>% начальная скидка на весь ассортимент, за каждые потраченные 5000 тысяч дополнительно 1% (максимум 10%), при сумме покупок за год больше 10тыс руб к моменту покупки 2 2 раза в год доступна купонная скидка 12%</p>
+					  </div>
+				  </div>
+				  <div>
+					  <div class="row actions-row">
+						  <div class="col-xs-2">
+							  <img src="images/tmp/discount-img-1.jpg" alt="img">
+						  </div>
+						  <div class="col-xs-10">
+							  <a href="javascript:void(0)">При покупке в аптеках одной упаковки ТЕРАФЛЮ КРУЖКА в подарок!</a>
+							  <p>Простуда - одно из самых распространенных заболеваний в терапии, особенно возрастает число заболевших в межсезонье. Чаще всего простуда является следствием проникновения и развития в организме пациента вирусной инфекции, которая локализуется в верхних дыхательных путях. Именно вирусная природа заболевания нередко приводит к тому, что простуда распространяется достаточно быстро и повсеместно. </p>
+							  <a href="javascript:void(0)" class="re-direct">Перейти в каталог ТЕРАФЛЮ<i class="fa fa-long-arrow-right"></i></a>
+							  <span>15 Августа — 15 сентября</span>
+						  </div>
+					  </div>
+					  <div class="row actions-row">
+						  <div class="col-xs-2">
+							  <img src="images/tmp/discount-img-2.jpg" alt="img">
+						  </div>
+						  <div class="col-xs-10">
+							  <a href="javascript:void(0)">Товары компании Pfizer: 2 по цене 1</a>
+							  <p>Простуда - одно из самых распространенных заболеваний в терапии, особенно возрастает число заболевших в межсезонье. Чаще всего простуда является следствием проникновения и развития в организме пациента вирусной инфекции, которая локализуется в верхних дыхательных путях. Именно вирусная природа заболевания нередко приводит к тому, что простуда распространяется достаточно быстро и повсеместно. </p>
+							  <a href="javascript:void(0)" class="re-direct">Перейти на сайт PFIZER<i class="fa fa-long-arrow-right"></i></a>
+							  <span>15 Августа — 15 сентября</span>
+						  </div>
+					  </div>
+					  <div class="row actions-row">
+						  <div class="col-xs-2">
+							  <img src="images/tmp/discount-img-1.jpg" alt="img">
+						  </div>
+						  <div class="col-xs-10">
+							  <a href="javascript:void(0)">При покупке в аптеках одной упаковки ТЕРАФЛЮ КРУЖКА в подарок!</a>
+							  <p>Простуда - одно из самых распространенных заболеваний в терапии, особенно возрастает число заболевших в межсезонье. Чаще всего простуда является следствием проникновения и развития в организме пациента вирусной инфекции, которая локализуется в верхних дыхательных путях. Именно вирусная природа заболевания нередко приводит к тому, что простуда распространяется достаточно быстро и повсеместно. </p>
+							  <a href="javascript:void(0)" class="re-direct">Перейти в каталог ТЕРАФЛЮ<i class="fa fa-long-arrow-right"></i></a>
+							  <span>15 Августа — 15 сентября</span>
+						  </div>
+					  </div>
+					  <div class="row actions-row">
+						  <div class="col-xs-2">
+							  <img src="images/tmp/discount-img-2.jpg" alt="img">
+						  </div>
+						  <div class="col-xs-10">
+							  <a href="javascript:void(0)">Товары компании Pfizer: 2 по цене 1</a>
+							  <p>Простуда - одно из самых распространенных заболеваний в терапии, особенно возрастает число заболевших в межсезонье. Чаще всего простуда является следствием проникновения и развития в организме пациента вирусной инфекции, которая локализуется в верхних дыхательных путях. Именно вирусная природа заболевания нередко приводит к тому, что простуда распространяется достаточно быстро и повсеместно. </p>
+							  <a href="javascript:void(0)" class="re-direct">Перейти в каталог ТЕРАФЛЮ<i class="fa fa-long-arrow-right"></i></a>
+							  <span>15 Августа — 15 сентября</span>
+						  </div>
+					  </div>
+				  </div>
+			  </div>
+			  <div class="pagination-shadow"></div>
+				 <ul class="pagination">
+					<li><a href="javascript:void(0)" class="prev-btn"><i class="fa fa-angle-left"></i> назад</a></li>
+					<li><a href="javascript:void(0)">1</a></li>
+					<li><a href="javascript:void(0)">2</a></li>
+					<li><a href="javascript:void(0)">3</a></li>
+					<li><a href="javascript:void(0)">4</a></li>
+					<li><a href="javascript:void(0)">5</a></li>
+					<li><a href="javascript:void(0)" class="next-btn">вперед <i class="fa fa-angle-right"></i></a></li>
+				</ul>
+		  </div>
+	   <footer>
+		  <div class="ellipse"></div>
+			  <div class="container">
+				  <div class="row footer-row">
+					  <address class="col-xs-4">
+						  <span class="d-plus">© Аптека ”Плюс”. Все права защищены.</span><br>
+						  <a href="javascript:void(0)" class="blue-color">Список отделений</a><br>
+						  E-mail:<a href="mailto:plus@gmail.com" class="blue-color mail">plus@gmail.com</a><br>
+						  Skype: <a href="javascript:void(0)" class="skype">aptekaplus</a> <br>
+						  +7 (8443) 31-71-71<br>
+						  +7 (8443) 78-37-42<br>
+					  </address>
+					  <div class="col-xs-3">
+						  <ul>
+							  <li><a href="javascript:void(0)">Лекарственные препараты</a></li>
+							  <li><a href="javascript:void(0)">БАД</a></li>
+							  <li><a href="javascript:void(0)">Медицинская техника</a></li>
+							  <li><a href="javascript:void(0)">Лечебная косметика</a></li>
+							  <li><a href="javascript:void(0)">Массмаркет</a></li>
+							  <li><a href="javascript:void(0)"> Травы/Чаи</a></li>
+							  <li><a href="javascript:void(0)">Питание</a></li>
+						  </ul>
+					  </div>
+					  <div class="col-xs-3">
+						  <ul>
+							  <li><a href="javascript:void(0)">Статьи</a></li>
+							  <li><a href="javascript:void(0)">Новости</a></li>
+							  <li><a href="javascript:void(0)">Советы</a></li>
+							  <li><a href="javascript:void(0)">Ассортимент и качество</a></li>
+							  <li><a href="javascript:void(0)">Заказ и Доставка</a></li>
+							  <li><a href="javascript:void(0)">Предложения для организаций</a></li>
+						  </ul>
+					  </div>
+					  <div class="col-xs-2">
+						  <span class="magwai">Сделано в <a href="javascript:void(0)" class="blue-color">Magwai</a></span>
+					  </div>
+				  </div>
+			  </div>
+	  </footer>
+	  <script src="js/delete_me.js"></script>
+	   <!--[if lt IE 9]>
+	  <script src="js/modernizr-2.0.6-min.js"></script>
+	  <script>
+$(document).ready(function(){
+    if(!Modernizr.input.placeholder) {
+        $("input[placeholder]").each(function() {
+            var placeholder = $(this).attr("placeholder");
+
+            $(this).val(placeholder).focus(function() {
+                if($(this).val() == placeholder) {
+                    $(this).val("")
+                }
+            }).blur(function() {
+                if($(this).val() == "") {
+                    $(this).val(placeholder)
+                }
+            });
+        });
+    } // Modernizr placeholder
+});
+</script>
+   <![endif]-->
+  </body>
+</html>

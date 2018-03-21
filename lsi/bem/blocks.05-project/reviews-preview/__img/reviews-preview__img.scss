@@ -1,0 +1,10 @@
+.reviews-preview__img {
+  float: left;
+  width: 220px;
+  display: block;
+  height: 185px;
+  @media (max-width: $screen-sm-max) {
+    float: none;
+    margin: auto;
+  }
+}

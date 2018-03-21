@@ -1,0 +1,14 @@
+table {
+  // БЕМ Запрещает использование элементов без класса: не делайте так в своем проекте))
+  &:not(class){
+    caption{
+      &:not(class),
+      &.table__caption {
+        padding-top: $table-cell-padding;
+        padding-bottom: $table-cell-padding;
+        color: $text-muted;
+        text-align: left;
+      }
+    }
+  }
+}

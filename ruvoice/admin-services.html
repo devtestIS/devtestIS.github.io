@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ruvoice</title>
+
+    <!-- Bootstrap -->
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/jquery-1.11.1.js"></script>
+    <!--[if lte IE 8]>
+        <script src="js/poly-checked.js"></script>
+        <![endif]-->
+    <!--[if lt IE 8]>
+        <script src="js/IE8.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="css/ie8.css" />
+	<![endif]-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="control-header">
+       <div class="top-header dark-top">
+           <div class="container">
+               <ul class="log-in">
+                   <li class="dropdown">
+                       <a href="#" id="lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="rus"></span>рус<span class="caret"></span></a>
+                   </li>
+                   <li><a href="#" class="balance">Баланс:  <strong>750 Руб.</strong><i class="fa fa-plus"></i></a></li>
+               </ul>
+               <ul class="nav-top">
+                  <li role="presentation"><a href="#"><i class="hs-1"></i>Услуги</a></li>
+                  <li role="presentation"><a href="#"><i class="hs-2"></i>Сообщения</a></li>
+                  <li role="presentation"><a href="#"><i class="hs-3"></i>Заказать</a></li>
+                  <li role="presentation"><a href="#"><i class="hs-4"></i>Финансы</a></li>
+                  <li role="presentation"><a href="#"><i class="hs-5"></i>Поддержка</a></li>
+                </ul>
+                <div class="user-panel clearfix">
+                           <div class="pull-left user">
+                               <a href="#" class="pull-left"><img src="img/avatar.jpg" alt="avatar"></a>
+                               <a href="#" class="pull-right user-name">
+                                  <span class="name">Stanislav</span>
+                                  <span class="type">Premium</span>
+                                </a>
+                           </div>
+                    <a href="#" class="pull-right log-out"><i class="set"></i>Выйти</a>
+                </div>
+           </div>
+       </div>
+        <nav>
+           <div class="container">
+               <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
+                <ul class="nav nav-pills pull-right">
+                  <li role="presentation"><a href="#">Тарифы</a></li>
+                  <li role="presentation" class="dropdown"><a href="#" id="drop-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Услуги</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop-menu">
+                      <li><a href="#">Радио бот для teamspeak</a></li>
+                      <li><a href="#">Администрирование сервера </a></li>
+                      <li><a href="#">Специальные скрипты</a></li>
+                  </ul>
+                  </li>
+                  <li role="presentation"><a href="#">Оплата</a></li>
+                  <li role="presentation"><a href="#">отзывы</a></li>
+                  <li role="presentation"><a href="#">Документы</a></li>
+                  <li role="presentation"><a href="#">Контакты</a></li>
+                </ul>
+           </div>
+        </nav>
+    </header>
+        <div class="container banner">
+            <img src="img/banner.png" alt="banner">
+            <div class="text">
+                <h1>Новогоднее предложение!</h1>
+                <h2>Скидки 20% на все тарифы. Акция действительная до 31 декабря. Спешите заказать!</h2>
+            </div>
+        </div>
+        <div class="container services">
+            <h1>Услуги</h1>
+            <div class="message">
+               <i class="pull-left phone"></i>
+               <button class="close-icon"></button>
+                <strong>Новые панели управления для серверов</strong>
+                <span>Запущена новая панель управления для Teamspeak и Mumble. Попасть в панель можно через мои услуги.</span>
+            </div>
+        </div>
+        <div class="container servers">
+            <div class="row">
+                <div class="col-xs-5">
+                    <a href="#" class="header-link"><i class="ts-s"></i>TeamSpeak </a><span>(100 слотов)</span>
+                    <table class="serever-option">
+                        <tr>
+                            <th>Локация</th>
+                            <td><i class="en"></i>Англия, Лондон  <a href="#">Изменить</a></td>
+                        </tr>
+                        <tr>
+                            <th>IP адрес</th>
+                            <td>134.0.112.166: 64762<a href="#" class="connect"></a></td>
+                        </tr>
+                        <tr>
+                            <th>Поддомен</th>
+                            <td>Нет домена  <a href="#">Выбрать</a></td>
+                        </tr>
+                        <tr>
+                            <th>Доп. услуги</th>
+                            <td>Нет услуг  <a href="#">Выбрать</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-xs-7 data">
+                    <div class="clearfix">
+                        <div class="pull-left status">Статус:<span class="active">Активный</span><a href="#">Отключить</a></div>
+                        <div class="pull-right auto-renewal">Автопродление: <a href="#" class="disable">Включить</a></div>
+                    </div>
+                    <input type="hidden" class="slider-days" value="800" />
+                    <span class="paid">Оплачен до: 05.12.2014 (Осталось 35 дней)</span>
+                    <div class="buttons">
+                        <button><i class="photo"></i>Сменить тариф</button>
+                        <button><i class="reply"></i>Продлить</button>
+                        <button><i class="pencil"></i>Войти в панель управления</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5">
+                    <a href="#" class="header-link"><i class="mim-s"></i>Mumble </a><span>(50 слотов)</span>
+                    <table class="serever-option">
+                        <tr>
+                            <th>Локация</th>
+                            <td><i class="en"></i>Англия, Лондон  <a href="#">Изменить</a></td>
+                        </tr>
+                        <tr>
+                            <th>IP адрес</th>
+                            <td>134.0.112.166: 64762<a href="#" class="connect"></a></td>
+                        </tr>
+                        <tr>
+                            <th>Поддомен</th>
+                            <td>Нет домена  <a href="#">Выбрать</a></td>
+                        </tr>
+                        <tr>
+                            <th>Доп. услуги</th>
+                            <td>Нет услуг  <a href="#">Выбрать</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-xs-7 data">
+                    <div class="clearfix">
+                        <div class="pull-left status">Статус:<span class="disable">Отключен</span><a href="#">Включить</a></div>
+                        <div class="pull-right auto-renewal">Автопродление: <a href="#" class="active">Отключить</a></div>
+                    </div>
+                    <input type="hidden" class="slider-days" value="0" />
+                    <span class="paid">Оплачен до: 05.12.2014 (Осталось 35 дней)</span>
+                    <div class="buttons">
+                        <button><i class="photo"></i>Сменить тариф</button>
+                        <button><i class="reply"></i>Продлить</button>
+                        <button><i class="pencil"></i>Войти в панель управления</button>
+                    </div>
+                </div>
+            </div>
+            <div class="order-server clearfix">
+                <span class="pull-left">Нехватает сверверов? Нужен новый серсвер?</span><a href="" class="pull-right order">Заказать Сервер</a>
+            </div>
+            <div class="install-box">
+                <div class="install">
+                    <div id="progress" class="progress"></div>
+                    <span class="label">Установка</span>
+                </div>
+                <div class="description">
+                    <p>Может занять до</p>
+                    <strong>30 секунд</strong>
+                </div>
+            </div>
+      </div>
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                  <ul class="pull-left links">
+                      <li><a href="#"><span class="email"></span>support@ruvoice.com</a></li>
+                      <li><a href="#"><span class="chat"></span>Система тикет-сообщений</a></li>
+                      <li><a href="#"><span class="icq"></span>108004</a></li>
+                  </ul>
+                  <ul class="social">
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                   </ul>
+                </div>
+            </div>
+            <div class="container">
+                  <div class="row">
+                      <div class="col-xs-3 section">
+                          <span class="header">Аккаунт</span>
+                          <ul class="account">
+                              <li><a href="#">Войти</a></li>
+                              <li><a href="#">Зарегистрироваться</a></li>
+                              <li><a href="#" class="forgot-pass">Забыли пароль?</a></li>
+                          </ul>
+                          <span class="lock"></span>
+                      </div>
+                      <div class="col-xs-3 section">
+                          <span class="header">Компания</span>
+                          <ul>
+                              <li><a href="#">О компании</a></li>
+                              <li><a href="#">Партнерская программа</a></li>
+                              <li><a href="#">Обратная связь</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-xs-3 section">
+                          <span class="header">Услуги</span>
+                          <ul>
+                              <li><a href="#">Заказать Ventrilo</a></li>
+                              <li><a href="#">Заказать Teamspeak</a></li>
+                              <li><a href="#">Заказать Mumble</a></li>
+                              <li><a href="#">Радио-бот для TS3</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-xs-3 section">
+                          <span class="header">Документация</span>
+                          <ul>
+                              <li><a href="#">Настройка Ventrilo</a></li>
+                              <li><a href="#">Настройка Teamspeak 3</a></li>
+                              <li><a href="#">Настройка Mumble</a></li>
+                          </ul>
+                      </div>
+                  </div>
+            </div>
+        </footer>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/jquery.range.js"></script>
+    <script src="js/progressbar.js"></script>
+    <script>
+        $(window).load(function() {
+          $('.bg-slider').flexslider({
+            animation: "slide",
+            directionNav: false
+            });
+            $('.order-slider').flexslider({
+                animation: "slide",
+                animationLoop: true,
+                itemWidth: 300,
+                itemMargin: 5,
+                minItems: 3,
+                maxItems: 9,
+                prevText: "",
+                nextText: "",
+                controlNav: false,
+                directionNav: false
+            });
+                });
+        $('.slider-days').jRange({
+            from: 10,
+            to: 2000,
+            step: 1,
+            showScale: false,
+            showLabels: false,
+            format: '%s слотов',
+            width: 512,
+            theme: "theme-blue",
+
+            });
+        $('.dropdown').hover(function() {
+              $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+            }, function() {
+              $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+            });
+        window.onload = function onLoad() {
+            var startColor = '#0095cc';
+            var endColor = '#35c6fc';
+
+            var circle = new ProgressBar.Circle('#progress', {
+                color: startColor,
+                trailColor: '#eee',
+                strokeWidth: 5,
+                duration: 3000,
+                easing: 'easeInOut',
+                text: {
+                    value: '0'
+                },
+                step: function(state, bar) {
+                    bar.setText((bar.value() * 100).toFixed(0));
+                }
+            });
+            circle.animate(1, {
+                from: {color: startColor},
+                to: {color: endColor}
+            });
+            };
+            $('.install-box').affix({
+              offset: {
+                bottom: function () {
+                  return (this.bottom = 376 + $('footer').outerHeight(true))
+                }
+              }
+            });
+      </script>
+      <!-- For browser test delete on production -->
+      <script src="js/delet_me.js"></script>
+  </body>
+</html>

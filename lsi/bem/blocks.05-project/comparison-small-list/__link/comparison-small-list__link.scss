@@ -1,0 +1,14 @@
+.comparison-small-list__link {
+  text-decoration: none;
+  color: #777777;
+  border-bottom: 1px dashed;
+  & + & {
+    margin-left: 15px;
+  }
+  &:focus,
+  &:hover {
+    color: #777777;
+    text-decoration: none;
+    border-color: transparent;
+  }
+}

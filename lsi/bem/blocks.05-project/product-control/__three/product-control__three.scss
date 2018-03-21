@@ -1,0 +1,11 @@
+.product-control__three {
+  @media (max-width: $screen-xs-max){
+    width: 50%;
+    order: 20;
+  }
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        width: 50%;
+        order: 20;
+  }
+
+}

@@ -1,0 +1,14 @@
+.company-clients__item {
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    text-align: center;
+    filter: grayscale(100%);
+    padding: 0 10px;
+    &:hover {
+        filter: grayscale(0%);
+    }
+    img {
+        max-width: 100%;
+    }
+}

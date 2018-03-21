@@ -1,0 +1,15 @@
+.order-item__label_status_n,
+.order-item__label_status_w {
+    background: #ffab00;
+}
+
+.order-item__label_status_p,
+.order-item__label_status_s,
+.order-item__label_status_a,
+.order-item__label_status_f {
+    background: #95c11e;
+}
+
+.order-item__label_status_c {
+    background: #f24841;
+}

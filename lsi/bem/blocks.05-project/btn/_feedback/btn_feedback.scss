@@ -1,0 +1,19 @@
+.btn_feedback {
+  background: #F1F1F1;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-color: #a8a8a8;
+  padding: 6px 14px;
+  transition: background 0.1s ease-in-out;
+  color: #000;
+  &:focus,
+  &:hover {
+    color: #ffffff;
+    background: $color_primary;
+    border-color: $color_primary;
+  }
+  @media (max-width: 430px) {
+    font-size: 14px;
+    padding: 4px 8px 3px;
+  }
+}

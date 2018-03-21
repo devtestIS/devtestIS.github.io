@@ -1,0 +1,16 @@
+.card-product_special {
+  //height: 360px;
+  .card-product__label {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: -23px;
+    top: -2px;
+    background: $color_primary;
+    color: #fff;
+    display: inline-block;
+    padding: 1px 9px 1px 27px;
+    margin-bottom: 6px;
+  }
+}

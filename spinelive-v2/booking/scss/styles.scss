@@ -1,0 +1,27 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+@import "compass/css3";
+@import "header";
+@import "content";
+@import "footer";
+@import "sprites";
+@import "chose-doctor";
+@import "select";
+@import "rating";
+
+html, body{
+    position: relative;
+    height: 100%;
+    min-height: 730px;
+    min-width: 1024px;
+}
+
+.container{
+    width: 510px;
+}

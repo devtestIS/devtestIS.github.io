@@ -1,0 +1,8 @@
+.checkout-address__map {
+  width: 55%;
+  float: left;
+  @media (max-width: $screen-xs-max) {
+    width: 100%;
+    float: none;
+  }
+}

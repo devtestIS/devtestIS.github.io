@@ -1,0 +1,6 @@
+.offer-item__link {
+  color: $link-color;
+  @media(max-width: $screen-sm-max){
+    margin-left: 20px;
+  }
+}

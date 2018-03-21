@@ -1,0 +1,40 @@
+.header-main-line__col_column {
+  &_one{
+    padding-top: 0;
+    flex-shrink: 0;
+    @media (max-width: 600px) {
+      padding-top: 30px;
+      width: auto;
+    }
+    @media (min-width: $screen-sm-min) {
+
+    }
+  }
+  &_two{
+    display: none;
+    padding-left: 16px;
+    @media (min-width: $screen-sm-min) {
+      display: block;
+      flex: 10 0 auto;
+    }
+  }
+  &_three{
+    width: auto;
+    float: right;
+    @media (max-width: 600px) {
+      width: 160px;
+    }
+    @media (min-width: $screen-sm-min) {
+
+    }
+
+  }
+  &_product{
+    display: none;
+    width: 100%;
+    .header__mid_active_product & {
+      display: block;
+    }
+  }
+}
+

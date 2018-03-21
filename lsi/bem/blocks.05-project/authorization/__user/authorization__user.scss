@@ -1,0 +1,18 @@
+.authorization__user {
+  text-align: left;
+  padding-left: 35px;
+  &:before {
+    content: '';
+    background-color: transparent;
+    background-image: url("../img/user.png#control");
+    width: 19px;
+    height: 19px;
+    display: block;
+    position: absolute;
+    margin-top: 17px;
+    left: 9px;
+  }
+  &.open {
+    background: #fff;
+  }
+}

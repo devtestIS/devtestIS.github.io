@@ -1,0 +1,15 @@
+.filter-slider__label {
+  width: 48%;
+  float: left;
+  text-align: center;
+  border: 1px solid #606060;
+  border-radius: 30px;
+  padding: 3px 5px;
+  color: #606060;
+  @media (max-width: $screen-md-max) {
+      font-size: 11px;
+  }
+  &+& {
+    margin-left: 4%;
+  }
+}

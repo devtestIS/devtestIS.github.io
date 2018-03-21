@@ -1,0 +1,22 @@
+.section-tags__link {
+    background:  #d7d7d7;
+    border-radius: 15px;
+    padding: 4px 15px;
+    font-size: $font-size-large - 4px;
+    font-family: $font-PT;
+    line-height: 30px;
+    font-weight: 400;
+
+    &, &:focus {
+        color: $headings-color;
+    }
+
+    &, &:hover, &:focus {
+        text-decoration: none;
+    }
+
+    &:hover {
+        color: $btn-info-bg;
+        background: $brand-primary;
+    }
+}

@@ -1,0 +1,29 @@
+.textarea-scrollbar, .scrollbar-inner {
+    border: none;
+    min-height: 130px;
+    max-height: 130px;
+    overflow: scroll;
+    resize: none;
+
+    &  > .scroll-element .scroll-element_track {
+        opacity: 1;
+        background-color: rgba(151, 164, 177, 0.2);
+    }
+
+    & > .scroll-element {
+        & .scroll-bar, &:hover .scroll-bar{
+            background-color: #1470cc;
+            opacity: 1;
+        }
+
+    }
+
+    & > .scroll-element.scroll-y .scroll-element_outer {
+        width: 6px;
+    }
+}
+
+.scroll-wrapper > .scroll-content {
+    padding-right: 12px;
+}
+

@@ -1,0 +1,12 @@
+.pagination__next_disabled {
+    color: #7b7b7b;
+    .pagination__link {
+        color: #7b7b7b;
+        cursor: default;
+        text-decoration: none;
+        &:focus,
+        &:hover {
+            color: #7b7b7b;
+        }
+    }
+}

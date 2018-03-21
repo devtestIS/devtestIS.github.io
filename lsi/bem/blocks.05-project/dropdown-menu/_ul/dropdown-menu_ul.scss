@@ -1,0 +1,22 @@
+.dropdown-menu_ul {
+  margin-top: 0;
+  border-radius: 0 0 4px 4px;
+  padding: 0;
+  border-color: #e8e8e8;
+
+  //** this bootstrap :-(( **//
+  > li {
+    > a {
+      border-bottom: 1px solid #e8e8e8;
+      padding: 8px 11px;
+      &:hover {
+        color: $color_primary;
+      }
+    }
+    &:last-child {
+      > a {
+        border-bottom: none;
+      }
+    }
+  }
+}

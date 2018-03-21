@@ -1,0 +1,13 @@
+.corporate-features__item {
+    display: flex;
+    margin-bottom: 39px;
+
+    @include make-xs-column(12);
+    @include make-sm-column(6);
+    @include make-md-column(4);
+    @include make-lg-column(4);
+
+    @media (max-width: $screen-xs-min) {
+        margin-bottom: 25px;
+    }
+}

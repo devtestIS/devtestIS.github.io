@@ -1,0 +1,26 @@
+.lightbox-link_icon-zoom {
+  &:before {
+    content: "\f00e";
+    font-family: FontAwesome;
+    font-size: 27px;
+    color: #d1d1d1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    height: 50px;
+    width: 50px;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 50px;
+    margin-top: -25px;
+    margin-left: -25px;
+    transition: color 0.4s linear
+  }
+  &:hover {
+    &:before {
+      color: #333333;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.collapse-button{
+&_offers {
+    width: 42px;
+    height: 28px;
+    border-radius: 2px;
+    text-align: center;
+    background: linear-gradient(to top, #0864b6 0%, #0864b6 20%, transparent 20%, transparent 40%, #0864b6 40%, #0864b6 60%, transparent 60%, transparent 80%, #0864b6 80%, #0864b6 100%);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 10px;
+    float: right;
+    cursor: pointer;
+
+    &:hover, &:focus {
+        text-decoration: none;
+    }
+    @media(min-width: $screen-sm-min) {
+        display: none !important;
+    }
+}
+
+
+
+    &_navbar span.icon-bar{
+        background: #fff;
+        height: 6px;
+        border-radius: 50%;
+        width: 6px;
+        display: block;
+        margin-top: 4px;
+        &:first-child{
+            margin-top: 0;
+        }
+
+    }
+
+
+    &_navbar {
+        background: transparent;
+        border: none;
+        margin: 17px 0;
+        padding: 11px 19px;
+        position: relative;
+        float: right;
+    }
+}

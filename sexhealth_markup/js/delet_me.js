@@ -1,0 +1,46 @@
+$(document).ready(function()
+{
+    var arrPage = [
+        {label: 'index', value: 'index'},
+        {label: 'man __________', value: 'javascript:void(0)'},
+        {label: 'index', value: 'man/index'},
+        {label: 'about', value: 'man/about'},
+        {label: 'control', value: 'man/control'},
+        {label: 'doctor', value: 'man/doctor'},
+        {label: 'doctorlist', value: 'man/doctorlist'},
+        {label: 'symptoms', value: 'man/symptoms'},
+        {label: 'symptoms_video', value: 'man/symptoms_video'},
+        {label: 'symptoms_video_txt', value: 'man/symptoms_video_txt'},
+        {label: 'treatments', value: 'man/treatments'},
+        {label: 'woman __________', value: 'javascript:void(0)'},
+        {label: 'index', value: 'woman/index'},
+        {label: 'about', value: 'woman/about'},
+        {label: 'control', value: 'woman/control'},
+        {label: 'doctor', value: 'woman/doctor'},
+        {label: 'doctorlist', value: 'woman/doctorlist'},
+        {label: 'symptoms', value: 'woman/symptoms'},
+        {label: 'symptoms_video', value: 'woman/symptoms_video'},
+        {label: 'symptoms_video_txt', value: 'woman/symptoms_video_txt'},
+        {label: 'treatments', value: 'woman/treatments'},
+        {label: 'Вверх', value: '#'}
+
+    ];
+
+    $('<ol id="pages2342"></ol>').prependTo('body').css({'position':'fixed', 'left':-220,'top':'30%', 'width':240,'margin':0,
+    'padding':'10px 20px 10px 40px', 'background':'rgb(200,200,200)','zIndex':54512, 'fontSize':12,'color':'black',
+    'fontFamily':'Arial, sans-serif', 'lineHeight':'20px'});
+
+    for (var i=0;i<arrPage.length;i++){
+        $('#pages2342').append('<li><a href="' +arrPage[i].value+ '.html">' +arrPage[i].label+ '</a></li>')
+    }
+
+    $('#pages2342 li:last').prepend('^').append('^').css({'fontWeight':'bold', 'listStyle':'none','textAlign':'center'})
+        .find('a').attr('href','#');
+    $('<li><b>&raquo;</b></li>').appendTo('#pages2342').css({'position':'absolute','top':'50%','right':5,'height':12, 'listStyle':'none'});
+    $('#pages2342').hover(function(){
+        $(this).css('left',0);
+    },
+    function(){
+        $(this).css('left',-220);
+    });
+});

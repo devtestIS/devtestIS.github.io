@@ -1,0 +1,12 @@
+.list-orders__total-price {
+  display: table-cell;
+  vertical-align: middle;
+  .list-orders__price{
+    font-size: 21px;
+  }
+  @media (min-width: $screen-sm-min) {
+    width: 185px;
+    padding-right: 65px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,18 @@
+.comparison-list__link {
+  text-decoration: none;
+  color: #777777;
+  border-bottom: 1px dashed;
+  white-space: nowrap;
+  & + & {
+    margin-left: 15px;
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+      margin-left: 0;
+    }
+  }
+  &:focus,
+  &:hover {
+    color: #777777;
+    text-decoration: none;
+    border-color: transparent;
+  }
+}

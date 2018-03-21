@@ -1,0 +1,70 @@
+$sprites-sprite-dimensions: true;
+@import "compass/utilities/sprites";
+@import "sprites/*.png";
+@include all-sprites-sprites;
+
+.install-box{
+    position: fixed;
+    right: 30px;
+    top: 512px;
+}
+
+.install{
+    @extend .sprites-install;
+    padding: 8px 7px 8px 9px;
+    position: relative;
+    .label{
+        position: absolute;
+        top: 31px;
+        left: 0px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        color:  #333333;
+        font-size: 9px; 
+        font-weight: 700;
+        line-height: 20px;
+    }
+}
+
+.description{
+    text-align: center;
+    p{
+        color:  #666666;
+        font-size: 9px; 
+        font-weight: 700;
+        line-height: 13px; 
+    }
+    strong{
+        color:  #333333;
+        font-size: 13px; 
+        font-weight: 700;
+        line-height: 13px;
+    }
+}
+
+.progress{
+    border-radius: 50%;
+    width: 86px;
+    height: 86px;
+    background: none;
+    border: none;
+    p{
+        position: relative;
+        color:  #099cd2!important;
+        top: 61%!important;
+        font-size: 24px; 
+        font-weight: 400;
+        &:after{
+            content: '%';
+            position: absolute;
+            right: -10px;
+            top: 9px;
+            font-size: 14px; 
+        }
+    }
+}
+.progress > svg{
+    height: 100%;
+    display: block;
+}

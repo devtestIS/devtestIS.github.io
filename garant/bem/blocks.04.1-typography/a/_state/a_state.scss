@@ -1,0 +1,6 @@
+.a_state {
+  &_hover{
+    text-decoration: $link-hover-decoration;
+    color: $link-hover-color;
+  }
+}

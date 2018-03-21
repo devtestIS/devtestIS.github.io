@@ -1,0 +1,7 @@
+.pagination__item {
+    &.active {
+        .pagination__link {
+            text-decoration: none;
+        }
+    }
+}

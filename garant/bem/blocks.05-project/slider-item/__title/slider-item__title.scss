@@ -1,0 +1,12 @@
+.slider-item__title {
+  color: $link-color;
+  font-size: 22px;
+  font-weight: 600;
+  ine-height: 1.7;
+  vertical-align: middle;
+  display: table-cell;
+  @media(max-width: $screen-xs-max){
+    display: block;
+    text-align: center;
+  }
+}

@@ -1,0 +1,6 @@
+.link_none-decoration {
+  text-decoration: none;
+  &:hover, &:focus{
+    text-decoration: none;
+  }
+}

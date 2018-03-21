@@ -1,0 +1,1 @@
+<a class="footer-list__link" href="mailto:zakaz@lsiufa.ru" target="_blank">zakaz@lsiufa.ru</a>

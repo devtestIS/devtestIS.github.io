@@ -1,0 +1,19 @@
+.quick-filter__item {
+  display: inline-block;
+  background: #fff;
+  color: #777777;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+  text-decoration: none;
+  margin-right: 15px;
+  margin-top: 10px;
+  padding: 5px 7px;
+  line-height: 1;
+  transition: border-color 0.2s ease-in-out;
+  &:focus,
+  &:hover {
+    border-color: $brand-primary;
+    text-decoration: none;
+    color: #777777;
+  }
+}

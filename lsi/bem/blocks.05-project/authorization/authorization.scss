@@ -1,0 +1,12 @@
+.authorization {
+  float: right;
+  width: 51%;
+  text-align: right;
+  @media (max-width: $screen-md-max) {
+    width: 55%;
+  }
+  @media (max-width: $screen-xs-max) {
+    width: 100%;
+  }
+
+}

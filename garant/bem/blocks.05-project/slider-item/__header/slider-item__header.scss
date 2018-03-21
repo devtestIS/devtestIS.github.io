@@ -1,0 +1,11 @@
+.slider-item__header {
+  border-bottom: 1px solid rgba(6, 6, 10, 0.1);
+  padding: 11px;
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+}

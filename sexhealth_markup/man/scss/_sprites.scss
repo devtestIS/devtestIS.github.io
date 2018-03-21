@@ -1,0 +1,93 @@
+$sprites-sprite-dimensions: true;
+@import "compass/utilities/sprites";
+@import "sprites/*.png";
+@include all-sprites-sprites; 
+
+i{
+    display: inline-block;
+}
+
+.info{
+    @include sprites-sprite(Info_icon);
+    position: absolute;
+    left: -18px;
+    top: 4px;
+}
+
+.key{
+    @include sprites-sprite(key);
+    position: absolute;
+    left: -17px;
+    top: -4px;
+}
+
+.house{
+    @include sprites-sprite(house);
+}
+
+.scroll{
+    @include sprites-sprite(scroll);
+}
+
+.case{
+    @include sprites-sprite(case);
+}
+
+.arrow{
+    @include sprites-sprite(arrow-up);
+}
+
+.play-button{
+    @include sprites-sprite(play);
+}
+
+.chevron-big{
+    @include sprites-sprite(chevron-big);
+}
+
+.chevron-blue{
+    @include sprites-sprite(chevron-blue);
+}
+
+
+.like{
+    @include sprites-sprite(like);
+}
+
+.dislike{
+    @include sprites-sprite(dislike);
+}
+
+a.collapsed{
+    .arrow{
+        @include sprites-sprite(arrow-down);
+    }
+}
+
+a:hover{
+        .key{
+            @include sprites-sprite(key-h);
+        }
+        .info{
+            @include sprites-sprite(Info_icon-h);
+        }
+        .case{
+            @include sprites-sprite(case-h);
+        }
+        .play-button{
+            @include sprites-sprite(play-hover);
+        }
+}
+
+#menu:hover{
+    .scroll{
+            @include sprites-sprite(scroll-hover);
+        }
+}
+
+.active  .house{
+    @include sprites-sprite(house-active);
+}
+
+
+

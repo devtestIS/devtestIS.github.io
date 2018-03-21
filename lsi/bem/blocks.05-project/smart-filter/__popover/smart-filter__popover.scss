@@ -1,0 +1,19 @@
+.smart-filter__popover {
+  @media (max-width: $screen-xs-max) {
+    &.popover {
+      position: static;
+      box-shadow: none;
+      width: 100%;
+      max-width: 100%;
+      border: none;
+      display: block;
+      &.right {
+        margin-left: 0px;
+      }
+      > .arrow {
+        display: none;
+      }
+    }
+  }
+
+}

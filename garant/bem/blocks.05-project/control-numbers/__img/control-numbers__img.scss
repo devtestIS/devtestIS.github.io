@@ -1,0 +1,54 @@
+.control-numbers__img {
+  margin-bottom: 9px;
+  position: relative;
+  //margin-bottom: 24px;
+  & img {
+    position: relative;
+    z-index: 20;
+    max-width: 100%;
+  }
+  &_about_car-new {
+    margin-top: 20px;
+    //margin-bottom: 28px;
+    margin-bottom: 15px;
+  }
+  @media(max-width: 991px) and (min-width: 768px){
+
+    &_about_shop{
+      position: absolute;
+      left: 55px;
+      top: 52px;
+      & svg{
+        width: 307px;
+        height: 145px;
+      }
+    }
+    &_about_car-old{
+      position: absolute;
+      top: 196px;
+      left: 214px;
+      & svg{
+        width: 142px;
+        height: 64px;
+      }
+    }
+    &_about_car-new{
+      position: absolute;
+      top: 194px;
+      left: 44px;
+      & svg{
+        width: 165px;
+        height: 67px;
+      }
+    }
+
+
+
+  }
+
+  @media(max-width: 767px){
+      margin-bottom: 12px;
+  }
+
+
+}

@@ -1,0 +1,9 @@
+a:not([class])  {
+    color: $link-color;
+    text-decoration: underline;
+    transition: color 0.2s ease-out;
+    &:focus,
+    &:hover {
+        text-decoration: none;
+    }
+}

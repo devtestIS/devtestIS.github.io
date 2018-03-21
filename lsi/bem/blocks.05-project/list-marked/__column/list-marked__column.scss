@@ -1,0 +1,5 @@
+.list-marked__column {
+    @include make-sm-column(6);
+    @include make-md-column(6);
+    @include make-lg-column(6);
+}

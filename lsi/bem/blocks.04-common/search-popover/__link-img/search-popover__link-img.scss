@@ -1,0 +1,18 @@
+.search-popover__link-img {
+  color: #303030;
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 7px;
+  vertical-align: middle;
+  position: relative;
+  &:hover {
+    text-decoration: none;
+    color: #303030;
+  }
+  >img {
+    max-width: 80px;
+    margin-right: 20px;
+    max-height: 50px;
+    float: left;
+  }
+}

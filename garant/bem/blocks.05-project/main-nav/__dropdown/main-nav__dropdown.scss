@@ -1,0 +1,27 @@
+.main-nav__dropdown {
+  z-index: $zindex-dropdown;
+  margin: 0;
+  list-style: none;
+  padding-left: $grid-gutter-width/2;
+  transition: visibility, opacity 0.35s ease 0.2s;
+  @media (min-width: $screen-sm-min) {
+    visibility: hidden;
+    opacity: 0;
+    padding: $x $m;
+    position: absolute;
+    box-shadow: $dropdown-box-shadow;
+    border-radius: $border-radius-base;
+    background-color: $dropdown-bg;
+    top: 100%;
+    .footer & {
+      top: auto;
+      bottom: 100%;
+    }
+    .main-nav__li.open  &,
+    .main-nav__li:hover &{
+      opacity: 1;
+      visibility: visible;
+      height: auto;
+    }
+  }
+}

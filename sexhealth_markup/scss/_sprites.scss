@@ -1,0 +1,33 @@
+$sprites-sprite-dimensions: true;
+@import "compass/utilities/sprites";
+@import "sprites/*.png";
+@include all-sprites-sprites; 
+
+i{
+    display: inline-block;
+}
+
+.mars{
+    @include sprites-sprite(mars);
+}
+
+.venus{
+    @include sprites-sprite(venus);
+}
+
+.chose span{
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 9px;
+    }
+    &:before{
+        @include sprites-sprite(left);
+        left: -44px;
+    }
+    &:after{
+        @include sprites-sprite(right);
+        right: -44px;
+    }
+}
+

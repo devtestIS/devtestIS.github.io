@@ -1,0 +1,7 @@
+.footer__row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 $grid-gutter-width/-2;
+}

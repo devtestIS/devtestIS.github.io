@@ -1,0 +1,30 @@
+.shop-detailed-head__col_column {
+  &_one {
+    width: 33.33333%;
+    @media (max-width: $screen-sm-max) {
+      width: 50%;
+    }
+    @media (max-width: $screen-ex-max) {
+      width: 100%;
+    }
+  }
+  &_two {
+    width: 33.33333%;
+    @media (max-width: $screen-sm-max) {
+      width: 50%;
+    }
+    @media (max-width: $screen-ex-max) {
+      width: 100%;
+    }
+  }
+  &_three {
+    width: 33.33333%;
+    @media (max-width: $screen-sm-max) {
+      width: 100%;
+      margin-top: 25px;
+    }
+    @media (max-width: $screen-ex-max) {
+      width: 100%;
+    }
+  }
+}

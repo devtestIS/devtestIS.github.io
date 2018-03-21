@@ -1,0 +1,97 @@
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: #f5f5f5;
+    z-index: 3;
+    .logo{
+        @extend .pull-left;
+        margin-top: 7px;
+        margin-bottom: 11px;
+        color:  #557627;
+        font-size: 45px;
+        font-weight: 300;
+        line-height: 33px;
+        text-transform: uppercase;
+    }
+    .m-inline-menu{
+        @include inline-block-list;
+        @extend .pull-right;
+        margin-top: 6px;
+        li{
+            margin-left: 16px;
+        }
+        a{
+            color:  #212121;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 40px;
+            text-transform: uppercase;
+            span{
+                display: inline-block;
+                margin-right: 6px;
+                text-align: center;
+                position: relative;
+                width: 32px;
+                height: 32px;
+                line-height: 32px;
+                &:before, &:after{
+                    content: '';
+                    position: absolute;
+                    z-index: -10;
+                    border: 16px solid transparent;
+                    width: 0;
+                    height: 0;
+                    left: 0px;
+                }
+                &:before{
+                    border-bottom-color: #4a612b;
+                    top: -16px;
+                }
+                &:after{
+                    top: 16px;
+                    border-top-color: #4a612b;
+                }
+            }
+        }
+        a:hover span{
+            &:before{
+                    border-bottom-color: #f7941d;
+                    top: -16px;
+                }
+                &:after{
+                    top: 16px;
+                    border-top-color: #f7941d;
+                }
+        }
+    }
+    .nav-bottom{
+        position: absolute;
+        bottom: -45px;
+        left: 0px;
+        z-index: 10;
+        width: 100%;
+        background-color: rgba(71, 93, 37, 0.4);
+	    @include box-shadow(0 3px 9px rgba(1,1,1,.75));
+        ul{
+            @extend .nav;
+            @extend .nav-pills;
+            @extend .nav-justified;
+        }
+        a{
+            color:  $body-bg; 
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 45px;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+        .check{
+            background-color:  rgba(47, 64, 25, 0.89);
+        }
+    }
+}
+
+
+

@@ -1,0 +1,15 @@
+.manual__link_icon {
+  &_pdf {
+    padding-left: 40px;
+    position: relative;
+    &:before {
+      content: '';
+      background: url("../../img/pdf.png") no-repeat;
+      position: absolute;
+      left: 0;
+      width: 30px;
+      height: 32px;
+      margin-top: 4px;
+    }
+  }
+}

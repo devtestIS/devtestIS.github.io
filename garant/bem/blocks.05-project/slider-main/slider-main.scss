@@ -1,0 +1,13 @@
+.slider-main {
+  width: 1036px;
+  margin: -15px auto;
+  @media(max-width: $screen-md-max){
+    width: calc(100% - 92px);
+  }
+  @media(max-width: $screen-xs-max){
+
+    width: 100%;
+    margin: 0;
+  }
+
+}

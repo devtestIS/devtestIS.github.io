@@ -1,0 +1,10 @@
+.card-control-small {
+  display: none;
+  //margin-top: -24px;
+  @media (max-width: $screen-sm-max) {
+    display: block;
+  }
+  @media (max-width: $screen-xs-max) {
+    //margin-top: -20px;
+  }
+}

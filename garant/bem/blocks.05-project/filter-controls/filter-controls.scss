@@ -1,0 +1,16 @@
+.filter-controls {
+  color: #97a4b1;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: $grid-gutter-width/2;
+
+  &__view{
+    font-size: 2em;
+  }
+
+  & + .sticky__more {
+    padding: 15px 0;
+  }
+}

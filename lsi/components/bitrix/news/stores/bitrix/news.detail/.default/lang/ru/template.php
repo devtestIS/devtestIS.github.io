@@ -1,0 +1,9 @@
+<?
+$MESS["INTERVOLGA_CUSTOM.ADDRESS"] = "Адрес";
+$MESS["INTERVOLGA_CUSTOM.PHONE"] = "Телефон";
+$MESS["INTERVOLGA_CUSTOM.WORKING_HOURS"] = "Режим работы";
+$MESS["INTERVOLGA_CUSTOM.BUY_TYPES"] = "Способы покупки";
+$MESS["INTERVOLGA_CUSTOM.PAYMENT_TYPES"] = "Способы оплаты";
+$MESS["INTERVOLGA_CUSTOM.DELIVERY_TYPES"] = "Способы доставки";
+$MESS["INTERVOLGA_CUSTOM.CREDITS"] = "Кредит и рассрочка";
+$MESS["INTERVOLGA_CUSTOM.PHOTOS"] = "Фотографии магазина";

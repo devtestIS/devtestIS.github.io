@@ -1,0 +1,10 @@
+.main-nav__toggle {
+  cursor: pointer;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  font-size: 3em;
+  padding: $m 0;
+}

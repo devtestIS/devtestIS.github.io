@@ -1,0 +1,20 @@
+.slider-comparison__remove {
+  position: absolute;
+  width: 22px;
+  background: #f24841;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 21px;
+  display: inline-block;
+  top: 10px;
+  right: 10px;
+  &:hover,
+  &:focus {
+    background: #dd413b;
+    color: #fff;
+    text-decoration: none;
+  }
+}

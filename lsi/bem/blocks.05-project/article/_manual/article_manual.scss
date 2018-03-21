@@ -1,0 +1,6 @@
+.article_manual {
+  margin-right: 220px;
+  @media (max-width: $screen-xs-max) {
+    margin-right: 0;
+  }
+}

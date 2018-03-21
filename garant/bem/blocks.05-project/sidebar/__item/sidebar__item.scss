@@ -1,0 +1,32 @@
+.sidebar__item {
+  margin-bottom: 15px;
+  position: relative;
+  &:hover:after{
+    opacity: 1;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 12px;
+    top: calc(50% - 6px);
+    background: url('../../../images/arrow-menu.svg') no-repeat center;
+    right: 0;
+    opacity: 0;
+    transition: 0.3s;
+
+
+  }
+  &:last-child{
+    margin-bottom: 0;
+  }
+  & a{
+    font-size: 15px;
+    font-weight: 300;
+    &:hover{
+      text-decoration: none;
+      color: $text-color;
+
+    }
+  }
+}

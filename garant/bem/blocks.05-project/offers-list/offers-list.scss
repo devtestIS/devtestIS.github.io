@@ -1,0 +1,15 @@
+.offers-list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin: -$grid-gutter-width/2;
+  &:after,
+  &:before{
+    content: none !important;
+  }
+  .col-xs-12{
+    padding-top: $grid-gutter-width/2;
+    padding-bottom: $grid-gutter-width/2;
+  }
+}

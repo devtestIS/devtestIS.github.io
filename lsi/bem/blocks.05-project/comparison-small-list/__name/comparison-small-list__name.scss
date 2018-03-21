@@ -1,0 +1,14 @@
+.comparison-small-list__name {
+  padding-right: 3px;
+  display: table-cell;
+  padding-top: 3px;
+  width: 55%;
+  vertical-align: bottom;
+  &:after {
+    content: '.......................................................................................................................................................................';
+    position: absolute;
+    height: 20px;
+    overflow: hidden;
+    width: 100%;
+  }
+}

@@ -1,0 +1,18 @@
+.features__icon {
+    font-size: 74px;
+    line-height: 74px;
+    color: $brand-primary;
+
+    img {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        display: none;
+    }
+
+    @include make-sm-column(2);
+    @include make-md-column(12);
+    @include make-lg-column(12);
+}

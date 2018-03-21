@@ -1,0 +1,15 @@
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__item{
+    padding-bottom: $grid-gutter-width;
+    flex-shrink: 0;
+    flex-basis: 200px;
+  }
+  &__title{
+    margin: 0;
+    margin-bottom: $s;
+  }
+}

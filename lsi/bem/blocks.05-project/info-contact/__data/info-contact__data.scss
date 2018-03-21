@@ -1,0 +1,15 @@
+.info-contact__data {
+  padding: 20px 35px 20px 35px;
+  float: left;
+  background: #f3f3f3;
+  border-right: 1px solid #d4d4d4;
+  width: 55%;
+  @media (max-width: $screen-md-max) {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #d4d4d4;
+  }
+  @media print {
+    padding-left: 0 !important;
+  }
+}

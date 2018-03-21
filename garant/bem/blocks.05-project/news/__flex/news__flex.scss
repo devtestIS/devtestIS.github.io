@@ -1,0 +1,9 @@
+.news__flex {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  @media(max-width: $screen-sm-max){
+    flex-direction: column;
+  }
+}

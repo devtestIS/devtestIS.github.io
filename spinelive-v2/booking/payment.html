@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>TeMed</title>
+
+    <!-- Bootstrap -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="chose-doctor height-full">
+        <header>
+            <a href="javascript:void(0)" class="pull-left"><img src="img/logo_small.png" alt="logo"></a>
+            <a href="javascript:void(0)" class="pull-left turn-back"><i class="i angle-left"></i><i class="i icon1"></i> Schedule a 1-on-1 Online Consultation with a Doctor</a> 
+            <a href="javascript:void(0)" class="login-logout pull-right">Logout</a>
+            <ul class="pull-right profile">
+                <li><a href="javascript:void(0)"><span>Samuel Doggins</span></a></li>
+                <li><a href="javascript:void(0)">Edit Profile</a></li>
+            </ul>
+            <a href="javascript:void(0)" class="previous">Go to Previous Step</a>
+        </header>
+        <div class="doctors-table">
+           <ul class="nav-line pull-left">
+               <li><a href="javascript:void(0)"><span>Choose a Doctor  and Time</span></a></li>
+               <li><a href="javascript:void(0)"><span>Describe your Conditions</span></a></li>
+               <li><a href="javascript:void(0)" class="active"><span>Payment Options</span></a></li>
+               <li><a href="javascript:void(0)"><span>Upload Documents</span></a></li>
+           </ul>
+           <div class="pay pull-right">
+               <div class="row">
+                   <div class="col-left">
+                      <i class="i secure"></i>
+                       <h2>Pay with Credit Card</h2>
+                       <form>
+                           <div class="row">
+                               <div class="left">
+                                   <div class="form-group">
+                                        <label for="Input1">Card Holder’s First Name</label>
+                                        <input type="text" class="form-control" id="Input1">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="Input2">Card Type</label>
+                                        <select class="selectpicker full-width">
+                                            <option></option>
+                                            <option></option>
+                                            <option></option>
+                                         </select>
+                                      </div>
+                               </div>
+                               <div class="right">
+                                   <div class="form-group">
+                                        <label for="Input3">Last Name</label>
+                                        <input type="text" class="form-control" id="Input3">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="Input4">Card Number</label>
+                                        <input type="text" class="form-control" id="Input4">
+                                      </div>
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="left">
+                                   <div class="form-group">
+                                        <label for="Input5">Card Expiration Date</label>
+                                        <select class="selectpicker month">
+                                            <option>1 - January</option>
+                                         </select>
+                                         <select class="selectpicker year">
+                                            <option>2015</option>
+                                         </select>
+                                      </div>
+                               </div>
+                               <div class="right">
+                                   <div class="form-group">
+                                        <label for="Input6">CW Code</label>
+                                        <input type="text" class="form-control code" id="Input6">
+                                        <a href="javascript:void(0)">What’s that?</a>
+                                      </div>
+                               </div>
+                           </div>
+                           <div class="clearfix">
+                               <label><input type="checkbox"><i></i> <span>I have read the <a href="javascript:void(0)">Payment Agreement</a> and agree to pay $199.00.</span></label>
+                           </div>
+                           <button class="pay-card">Pay Now with Card</button>
+                       </form>
+                   </div>
+                   <div class="col-right paypal">
+                      <i class="i paypal-v"></i>
+                       <h2>Pay with PayPal</h2>
+                       <form>
+                           <div class="clearfix">
+                               <label><input type="checkbox"><i></i> <span>I have read the <a href="javascript:void(0)">Payment Agreement</a> and agree to pay $199.00.</span></label>
+                           </div>
+                           <button></button>
+                       </form>
+                   </div>
+               </div>
+           </div>
+            
+        </div>
+        <footer>
+            <ul>
+                <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-pinterest-p"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/jquery.rating.js"></script>
+  </body>
+</html>

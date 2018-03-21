@@ -1,0 +1,6 @@
+.comparison-small {
+  display: none;
+  @media (max-width: $screen-sm-max) {
+    display: block;
+  }
+}

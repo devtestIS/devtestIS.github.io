@@ -1,0 +1,12 @@
+.card-control__grid_view {
+  &_box {
+    &:before {
+      content: "\f00a";
+    }
+  }
+  &_line {
+    &:before {
+      content: "\f00b";
+    }
+  }
+}

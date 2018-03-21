@@ -1,0 +1,16 @@
+.modal_theme_light {
+  font-family: $font-PT;
+  .modal-body {
+    padding: 15px 40px 40px 40px;
+  }
+  .modal__title {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+  .modal__close {
+    top: 25px;
+    right: 40px;
+    color: $color_primary;
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,26 @@
+.offers__more {
+
+  color: $link-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 60px;
+  text-align: center;
+  text-decoration: none;
+  &:hover, &:focus{
+    text-decoration: none;
+  }
+  & span{
+    transition: 0.3s;
+    border-bottom: 1px dotted $link-color;
+    &:hover{
+      border-color: transparent
+    }
+  }
+  & svg{
+    margin-right: 15px;
+    vertical-align: middle;
+  }
+}

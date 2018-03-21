@@ -1,0 +1,25 @@
+.become-customer__contact {
+    flex-basis: 47%;
+    display: flex;
+    color: $btn-primary-color;
+
+    img {
+        margin-right: 22px;
+        height: 75px;
+    }
+
+    p {
+        margin-top: 14px;
+        font-family: $font-PT;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    @media (max-width: $screen-md-max) {
+        margin-bottom: 30px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

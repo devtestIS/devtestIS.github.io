@@ -1,0 +1,11 @@
+.reviews-preview__title {
+  display: inline-block;
+  font-size: 21px;
+  color: $brand-primary;
+  text-decoration: underline;
+  margin-bottom: 15px;
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}

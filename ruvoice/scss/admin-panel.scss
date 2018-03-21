@@ -1,0 +1,322 @@
+@import "compass/css3";
+$sprites-sprite-dimensions: true;
+@import "compass/utilities/sprites";
+@import "sprites/*.png";
+@include all-sprites-sprites;
+
+.control-header{
+    .balance{
+        color:  #fff;
+        font-size: 12px; 
+        font-weight: 400;
+        line-height: 50px;
+        text-transform: none;
+        strong{
+            font-weight: 700;
+        }
+        .fa-plus{
+            display: inline-block;
+            width: 20px;
+	        height: 20px;
+            border-radius: 50%;
+            background: #1cb0e7;
+            color:  #fff;
+            font-size: 13px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 21px;
+            margin: 0px 0 0 15px;
+        }
+    }
+    .log-in{
+        margin: 0 39px 0 0;
+    }
+    .user-panel{
+        float: right;
+        .user{
+            margin: 10px 11px 0 0;
+            .user-name{
+                margin-left: 13px;
+            }
+        }
+        img{
+            @include border-radius(3px);
+        }
+        span{
+            display: block;
+            line-height: 14px;
+            &.name{
+                color:  #fff;
+                font-size: 12px; 
+                font-weight: 700;
+            }
+            &.type{
+                color:  #ffcc33;
+                font-size: 8px; 
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+        .log-out{
+            color:  rgba(255, 255, 255, 0.25);
+            font-size: 12px; 
+            font-weight: 400;
+            line-height: 49px;
+        }
+        i{
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 17px 0 0;
+            &.set{
+                @extend .sprites-set;
+            }
+        }
+    }
+    .nav-top{
+        margin: 15px 0 0 0px;
+        float: left;
+        li{
+            margin: 0 15px 0 0;
+            display: inline-block;
+        }
+        li>a{
+            color:  #999999;
+            font-size: 12px; 
+            font-weight: 400;
+            line-height: 12px;
+            text-transform: none;
+            &:hover{
+                color: #fff;
+                i{
+                    display: inline-block;
+                    &.hs-1{
+                        @extend .sprites-hs-1-a;
+                    }
+                    &.hs-2{
+                        @extend .sprites-hs-2-a;
+                    }
+                    &.hs-3{
+                        @extend .sprites-hs-3-a;
+                    }
+                    &.hs-4{
+                        @extend .sprites-hs-4-a;
+                    }
+                    &.hs-5{
+                        @extend .sprites-hs-5-a;
+                    }
+                }
+            }
+            i{
+                vertical-align: middle;
+                display: inline-block;
+                &.hs-1{
+                    @extend .sprites-hs-1;
+                }
+                &.hs-2{
+                    @extend .sprites-hs-2;
+                }
+                &.hs-3{
+                    @extend .sprites-hs-3;
+                }
+                &.hs-4{
+                    @extend .sprites-hs-4;
+                }
+                &.hs-5{
+                    @extend .sprites-hs-5;
+                }
+            }
+        }
+    }
+    nav .nav > li > a{
+        padding: 20px 20px;
+        font-size: 16px; 
+        font-weight: 700;
+    }
+}
+
+.admin-panel{
+    margin-top: 34px;
+    i{
+        display: inline-block;
+    }
+    .to-back{
+        margin-bottom: 19px;
+        display: block;
+        text-align: right;
+        color:  #999999;
+        font-size: 13px; 
+        font-weight: 400;
+        line-height: 20px;
+        i{
+            margin: 0 0 0 6px;
+            &.back-arrow{
+                @extend .sprites-back-arrow;
+            }
+        }
+    }
+    h1{
+        color:  #3a3a3a;
+        font-size: 60px; 
+        font-weight: 300;
+        line-height: 54px;
+    }
+    .id{
+        color:  #00a4e1;
+        font-size: 30px; 
+        font-weight: 400;
+        line-height: 54px;
+        padding-top: 3px;
+        i{
+            margin: 0 15px -9px 0;
+        }
+    }
+    .panel-header{
+        margin-bottom: 44px;
+    }
+    .control-panel{
+        margin: 0 0 85px 0;
+        li{
+            position: relative;
+            @include border-radius(3px);
+            background-color: #2c4983;
+            @include box-shadow(0 1px 3px rgba(0,0,0,.3));
+            @include background-image(linear-gradient(bottom, #f1f1f1, #fff));
+            margin-left: 10px;
+            &:first-child{
+                margin-left: 0px;
+            }
+            &.active{
+                @include border-radius(3px);
+                background-color: #1cb0e7;
+                @include box-shadow(inset 1px 2px 3px rgba(0,0,0,.2));
+                 @include background-image(linear-gradient(bottom, #1791be, #1cb0e7));
+                &:after{
+                    content: '';
+                    position: absolute;
+                    bottom: -4px;
+                    left: 50%;
+                    width: 0;
+                    height: 0;
+                    border-left: 4px solid transparent;
+                    border-right: 4px solid transparent;
+                    border-top: 4px solid #1cb0e7;
+                }
+                a{
+                    color: #fff!important;
+                }
+                i{
+                    &.cog{
+                        @extend .sprites-cog-a;
+                    }
+                    &.list{
+                        @extend .sprites-list-a;
+                    }
+                    &.user{
+                        @extend .sprites-user-a;
+                    }
+                    &.key{
+                        @extend .sprites-key-a;
+                    }
+                    &.document{
+                        @extend .sprites-document-a;
+                    }
+                    &.reply{
+                        @extend .sprites-reply-a;
+                    }
+                    &.info{
+                        @extend .sprites-info-a;
+                    }
+                    &.stats{
+                        @extend .sprites-stats-a;
+                    }
+                }
+            }
+            a, a:hover{
+                background: none!important;
+                border: none!important;
+                color:  #333333;
+                font-size: 13px; 
+                font-weight: 600;
+                line-height: 31px;
+                padding: 0 11px;
+                cursor: pointer;
+            }
+        }
+        i{
+            margin: 0 9px 0 0;
+            &.cog{
+                @extend .sprites-cog;
+            }
+            &.list{
+                @extend .sprites-list;
+            }
+            &.user{
+                @extend .sprites-user;
+            }
+            &.key{
+                @extend .sprites-key;
+            }
+            &.document{
+                @extend .sprites-document;
+            }
+            &.reply{
+                @extend .sprites-reply;
+            }
+            &.info{
+                @extend .sprites-info;
+            }
+            &.stats{
+                @extend .sprites-stats;
+            }
+        }
+        .nav-tabs{
+            margin-bottom: 9px;
+            border-bottom: none;
+        }
+        .table{
+            caption{
+                color:  #333333;
+                font-size: 22px; 
+                font-weight: 400;
+                line-height: 60px;
+                margin-bottom: 8px;
+            }
+            td{
+                padding: 0!important;
+                color:  #333333;
+                font-size: 14px; 
+                font-weight: 400;
+                line-height: 49px;
+                a{
+                    color:  #00a4e1;
+                    font-size: 13px; 
+                    font-weight: 400;
+                }
+                .active{
+                    padding-left: 17px;
+                    display: block;
+                    position: relative;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        left: 0px;
+                        top: 50%;
+                        margin-top: -5px;
+                        border-radius: 50%;
+                        @include background-image(linear-gradient(bottom, #5ecd21, #8ff359));
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+            th{
+                padding: 0 0 0 20px!important;
+                width: 240px;
+                color:  #000;
+                font-size: 14px; 
+                font-weight: 700;
+                line-height: 49px;
+            }
+        }
+    }
+}

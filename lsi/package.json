@@ -1,0 +1,73 @@
+{
+  "name": "3b-project-stub",
+  "description": "BEM project",
+  "version": "1.0.0",
+  "author": {
+    "name": "Shkarupa Alex",
+    "email": "alex@intervolga.ru"
+  },
+  "repository": {},
+  "engines": {
+    "node": ">=4.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "bootlint": "latest",
+    "bower": "latest",
+    "clean-css": "latest",
+    "clear-require": "latest",
+    "csslint": "latest",
+    "doctrine": "latest",
+    "enb": "https://github.com/shkarupa-alex/enb.git#d4481e1505e32dc9538b544a94f0b492d2cc9846",
+    "enb-bem-docs": "latest",
+    "enb-bem-examples": "latest",
+    "enb-bem-techs": "latest",
+    "enb-bh": "latest",
+    "enb-magic-factory": "latest",
+    "file": "latest",
+    "find-parent-dir": "latest",
+    "glob": "latest",
+    "gulp": "latest",
+    "gulp-cleancss": "latest",
+    "gulp-concat": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-rename": "latest",
+    "gulp-uglify": "latest",
+    "gulp-zip": "latest",
+    "inherit": "latest",
+    "js-beautify": "1.6.14",
+    "jshint": "latest",
+    "lodash": "latest",
+    "marked": "latest",
+    "mkdirp": "latest",
+    "node-sass": "^4.6.0",
+    "object-hash": "latest",
+    "postcss": "5.0.10",
+    "postcss-easysprites": "latest",
+    "postcss-import": "latest",
+    "postcss-url": "latest",
+    "precinct": "latest",
+    "remarkable": "latest",
+    "requirejs": "latest",
+    "uglify-js": "2.8.29",
+    "vow": "latest",
+    "yargs": "latest"
+  },
+  "scripts": {
+    "clean": "YENV=production node_modules/.bin/enb make clean",
+    "server": "YENV=development node_modules/.bin/enb server",
+    "make": "YENV=development node_modules/.bin/enb make && node_modules/.bin/gulp make_index",
+    "prod": "YENV=production node_modules/.bin/enb make && node_modules/.bin/gulp make_index",
+    "dist": "npm run prod && node_modules/.bin/gulp minify_images && node_modules/.bin/gulp make_archive",
+    "cleanw": "set YENV=production && node_modules\\.bin\\enb.cmd make clean",
+    "serverw": "set YENV=development && node_modules\\.bin\\enb.cmd server",
+    "makew": "set YENV=development && node_modules\\.bin\\enb.cmd make && node_modules\\.bin\\gulp.cmd make_index",
+    "prodw": "set YENV=production && node_modules\\.bin\\enb.cmd make && node_modules\\.bin\\gulp.cmd make_index",
+    "distw": "npm run prodw && node_modules\\.bin\\gulp.cmd minify_images && node_modules\\.bin\\gulp.cmd make_archive",
+    "postinstall": "node postinstall.js"
+  },
+  "private": true,
+  "dependencies": {
+    "jscrollpane": "^2.0.22"
+  }
+}

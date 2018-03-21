@@ -1,0 +1,17 @@
+.order-item__label {
+  font-size: 13px;
+  float: right;
+  color: #fff;
+  padding: 10px 20px 11px 30px;
+  border-radius: 5px 0 0 5px;
+  width: 35%;
+  text-align: center;
+  @media (max-width: $screen-md-max) {
+    float: none;
+    width: auto;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,42 @@
+.banner{
+    position: absolute;
+    bottom: 128px;
+    right: 0px;
+    width: 222px;
+    height: 164px;
+	@include box-shadow(0 3px 9px rgba(1,1,1,.75));
+    @include border-radius(221px 0 0, 1px 0 0);
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .content{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        padding: 13px 69px 0 12px;
+    }
+    h2{
+        position: relative;
+        margin: 0 0 51px 0;
+        color:  #fff;
+        font-size: 12.49px;
+        font-weight: 400;
+        line-height: 19px;
+        text-transform: uppercase;
+        &:before{
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 2px;
+        }
+    }
+    p{
+        color:  #fff;
+        font-size: 10px;
+        font-weight: 300;
+        line-height: 10px;
+    }
+}

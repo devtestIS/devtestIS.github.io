@@ -1,0 +1,17 @@
+.schedule {
+  color: #777777;
+  font-size: 15px;
+  float: left;
+  font-family: $font-PT;
+  width: 49%;
+  padding-left: 12px;
+  @media (max-width: $screen-md-max) {
+    width: 45%;
+  }
+  @media (max-width: $screen-xs-max) {
+    display: none;
+  }
+  @media print {
+    display: block;
+  }
+}

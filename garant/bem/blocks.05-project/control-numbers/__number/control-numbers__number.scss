@@ -1,0 +1,14 @@
+.control-numbers__number {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 1;
+  padding-right: 11px;
+  display: table-cell;
+  padding-left: 18px;
+
+  @media(max-width: 767px){
+      padding-left: 0;
+
+  }
+
+}

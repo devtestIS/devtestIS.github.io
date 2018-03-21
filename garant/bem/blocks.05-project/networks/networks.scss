@@ -1,0 +1,16 @@
+.networks {
+  padding-top: 9px;
+  padding-left: 11px;
+  @media(max-width: $screen-md-max){
+    text-align: right;
+    padding-bottom: 23px;
+  }
+  @media(max-width: $screen-sm-max){
+    padding-top: 0;
+  }
+  @media(max-width: $screen-xs-max){
+    padding: 23px 0;
+    text-align: center;
+  }
+
+}

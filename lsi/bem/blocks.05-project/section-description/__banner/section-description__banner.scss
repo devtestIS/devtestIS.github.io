@@ -1,0 +1,36 @@
+.section-description__banner {
+    @include make-xs-column(0);
+    @include make-sm-column(0);
+    @include make-md-column(0);
+    @include make-lg-column(2.7);
+
+    @media (min-width: $screen-xs-min) {
+        img {
+            display: none;
+        }
+    }
+
+    @media (min-width: $screen-sm-min) {
+        img {
+            display: none;
+        }
+    }
+
+    @media (min-width: $screen-md-min) {
+        img {
+            display: none;
+        }
+    }
+
+    @media (min-width: $screen-lg-min) {
+        img {
+            display: block;
+        }
+    }
+
+    img {
+        position: absolute;
+        top: -58px;
+        right: 2px;
+    }
+}

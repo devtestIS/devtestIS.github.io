@@ -1,0 +1,9 @@
+.card-product-line__features {
+  color: #777;
+  font-size: 13px;
+  width: 245px;
+  overflow: hidden;
+  @media (max-width: $screen-sm-max) {
+    margin-bottom: 16px;
+  }
+}

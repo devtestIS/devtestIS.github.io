@@ -1,0 +1,14 @@
+.main-nav__arrow {
+  &:after{
+    @media (min-width: $screen-sm-min) {
+      font-family: FontAwesome;
+      content: "\f107";
+      margin-left: 0.5em;
+      .main-nav__li.open  &,
+      .main-nav__li:hover & {
+        content: "\f106";
+      }
+    }
+  }
+
+}

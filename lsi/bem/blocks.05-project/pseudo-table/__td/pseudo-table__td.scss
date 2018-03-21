@@ -1,0 +1,33 @@
+.pseudo-table__td {
+  font-size: 14px;
+  @media (min-width: $screen-md-min) {
+    display: table-cell;
+    padding: 8px;
+    line-height: 1.42857;
+    vertical-align: top;
+    border: 1px solid #d4d4d4;
+  }
+  @media (max-width: $screen-sm-max) {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  a {
+    color: #303030;
+    text-decoration: underline;
+    &:hover {
+      color: #303030;
+      text-decoration: none;
+    }
+  }
+  &+&{
+    @media (min-width: $screen-md-min) {
+      text-align: center;
+      &.text-left {
+        text-align: left;
+      }
+      &.text-right {
+        text-align: right;
+      }
+    }
+  }
+}

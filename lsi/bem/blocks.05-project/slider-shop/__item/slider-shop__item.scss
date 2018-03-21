@@ -1,0 +1,12 @@
+.slider-shop__item {
+  display: inline-block;
+  .lightbox-link {
+    display: block;
+  }
+  .img-responsive {
+    margin: auto;
+  }
+  @media (max-width: $screen-sm-max) and (min-width: $screen-sm-min) {
+    margin: 5px;
+  }
+}

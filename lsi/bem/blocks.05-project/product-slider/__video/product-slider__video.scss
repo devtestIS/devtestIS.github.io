@@ -1,0 +1,17 @@
+.product-slider__video {
+  .video-youtube {
+    min-height: 360px;
+    @media (max-width: $screen-md-max) {
+      min-height: 304px;
+    }
+    @media (max-width: $screen-sm-max) {
+      min-height: 380px;
+    }
+    @media (max-width: $screen-xs-max) {
+      min-height: 100%;
+    }
+  }
+  .img-responsive {
+    margin: auto;
+  }
+}

@@ -1,0 +1,1 @@
+Есть вопросы? Звоните: <a href="tel:+78005009501" class="phone_tel"><strong class="phone-bottom">8 800 500 95 01</strong></a>

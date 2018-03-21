@@ -1,0 +1,30 @@
+.nav-bar__link {
+  color: $link-color;
+  text-decoration: none;
+  padding: 0 0px 2px !important;
+  transition: 0.3s;
+  line-height: 0;
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  border-bottom: 1px solid transparent;
+  line-height: 1;
+  transition: 0.3s;
+
+
+  &:hover,
+  &:focus{
+    border-bottom: 1px solid #d0e3f6;
+    text-decoration: none;
+    color: $link-hover;
+  }
+  @media(max-width: $screen-xs-max){
+    padding: 0 !important;
+    border: none;
+    &:hover,
+    &:focus{
+      border-bottom: none;
+    }
+
+  }
+}

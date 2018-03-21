@@ -1,0 +1,17 @@
+.product-control__four {
+  @media (max-width: $screen-xs-max){
+    width: 50%;
+    order: 40;
+    .btn{
+      display: block;
+    }
+  }
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    width: 50%;
+    order: 40;
+    .btn{
+      display: block;
+    }
+  }
+
+}

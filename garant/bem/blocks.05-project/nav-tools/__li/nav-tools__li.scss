@@ -1,0 +1,14 @@
+.nav-tools__li {
+  padding: $x 23px;
+  &:first-child{
+    width: 100%;
+    margin-bottom: $m;
+    @media (min-width: $screen-md-min) {
+      width: auto;
+      margin-bottom: 0;
+    }
+  }
+  .a, a{
+    white-space: nowrap;
+  }
+}

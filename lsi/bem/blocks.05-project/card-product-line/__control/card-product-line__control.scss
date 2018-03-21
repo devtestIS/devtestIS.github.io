@@ -1,0 +1,17 @@
+.card-product-line__control {
+  width: 165px;
+  padding-left: 25px;
+  position: absolute;
+  right: 23px;
+  top: 15px;
+  @media (max-width: $screen-sm-max) {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+  @media (max-width: 420px) {
+    padding: 0;
+    right: auto;
+  }
+}

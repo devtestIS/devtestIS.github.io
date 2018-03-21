@@ -1,0 +1,163 @@
+.screen{
+    background-size: cover;
+    height: 100%;
+    article{
+        padding-left: 20px;
+        padding-top: 20px;
+        h1{
+            margin-left: 4px;
+            font-family: 'PT Sans', sans-serif;
+            color:  #2d3234;
+            font-size: 45.7px;
+            font-weight: 700;
+            line-height: 28px;
+            text-align: left;
+            span{
+                display: block;
+                font-size: 31.8px;
+                font-weight: 400;
+                margin-bottom: 11px;
+            }
+            i{
+                font-size: 33px;
+                font-weight: bold;
+                margin-right: 11px;
+                margin-left: 2px;
+            }
+        }
+        .toggle{
+            position: relative;
+            display: block;
+            margin: 69px 0 0 -28px;
+            color:  #2d3234;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 18px;
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+            }
+            &:before{
+                content: '';
+                position: absolute;
+                top: -9px;
+                left: -21px;
+                height: 37px;
+                width: 1px;
+                background: #889288;
+            }
+        }
+        .link-section{
+            padding-top: 23px;
+            padding-bottom: 28px;
+        }
+        .nav > li > a{
+            display: inline-block;
+            color:  #434c42;
+            font-size: 17.88px;
+            font-weight: 700;
+            line-height: 43px;
+            text-align: left;
+            padding: 1px 13px;
+            @include border-radius(22px 21px 21px 22px, 22px 22px 21px 21px);
+            background-color: #fff;
+            @include box-shadow(0 1px 3px rgba(179,203,173,.9));
+            margin-bottom: 14px;
+            &:hover{
+                color:  #964ca6;
+            }
+        }
+        .small-nav{
+            margin-left: 16px;
+        }
+        .small-nav > li > a{
+            font-size: 12.99px;
+            line-height: 28px;
+            padding: 1px 11px;
+            margin-bottom: 12px;
+        }
+        .banner{
+            width: 410px;
+            @include border-radius(26px);
+	        @include box-shadow(0 1px 3px #e1d9b0);
+            background-color: rgba(255, 255, 255, 0.5);
+            .image{
+                overflow: hidden;
+                float: right;
+                @include border-radius(0px 30px 30px 0px);
+                background-color: #fff;
+                @include box-shadow(0 1px 3px rgba(210,197,180,.9));
+            }
+            a{
+                display: inline-block;
+                margin: 29px 0 17px 36px;
+                color:  #333;
+                font-size: 23px;
+                font-weight: 700;
+                line-height: 25px;
+                text-decoration: underline;
+            }
+            p{
+                padding: 0 0 0 35px;
+                color:  #2d3234;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 15px;
+                word-wrap: break-word;
+            }
+        }
+    }
+}
+
+.screen-1{
+    background-image: url(../img/bg.jpg);
+}
+
+.screen-2{
+    background-image: url(../img/bg-2.jpg);
+    article  h1{
+        margin-top: 51px;
+        margin-bottom: 16px;
+        color:  #2d3234;
+        span{
+            font-size: 35.76px;
+        }
+    }
+     article .nav > li > a{
+        padding: 1px 15px;
+    }
+    .middle-nav{
+        margin-left: 26px;
+    }
+    article .middle-nav > li > a{
+        font-size: 15.78px;
+        line-height: 35px;
+        margin-bottom: 11px;
+        padding: 1px 16px;
+    }
+    article .small-nav > li > a{
+        padding: 1px 18px;
+    }
+}
+
+.screen-3{
+    background-image: url(../img/bg-3.jpg);
+    h1{
+        margin-top: 51px;
+        margin-bottom: 16px;
+    }
+    article .small-nav{
+        margin-left: 42px;
+    }
+}
+
+.screen-4{
+    background-image: url(../img/bg-4.jpg);
+    h1{
+        margin-top: 46px;
+        margin-bottom: 7px;
+    }
+}
+
+
+

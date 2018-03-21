@@ -1,0 +1,10 @@
+.card-product__label {
+  display: inline-block;
+  padding: 1px 6px 2px;
+  color: #fff;
+  margin-bottom: 10px;
+  height: 22px;
+  .card-product__label+& {
+    margin-left: 5px;
+  }
+}

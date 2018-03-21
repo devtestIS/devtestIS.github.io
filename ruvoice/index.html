@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ruvoice</title>
+    <!-- Bootstrap -->
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/jquery-1.11.1.js"></script>
+    <!--[if lte IE 8]>
+        <script src="js/poly-checked.js"></script>
+        <![endif]-->
+    <!--[if lt IE 8]>
+        <script src="js/IE8.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="css/ie8.css" />
+	<![endif]-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+       <div class="top-header">
+           <div class="container">
+               <ul class="log-in">
+                   <li class="dropdown">
+                       <a href="#" id="lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="rus"></span>рус<span class="caret"></span></a>
+                       <ul class="dropdown-menu" role="menu" aria-labelledby="lang">
+                           <li><a href="#"><span class="gbr"></span>eng</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="#" class="sign-in" data-toggle="modal" data-target="#sign-in">Войти</a></li>
+                   <li><a href="#" class="reg">Регистрация</a></li>
+               </ul>
+               <ul class="social">
+                   <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                   <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                   <li><a href="#"><i class="fa fa-vk"></i></a></li>
+               </ul>
+           </div>
+       </div>
+        <nav>
+           <div class="container">
+               <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
+                <ul class="nav nav-pills pull-right">
+                  <li role="presentation"><a href="#">Тарифы</a></li>
+                  <li role="presentation" class="dropdown"><a href="#" id="drop-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Услуги</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop-menu">
+                      <li><a href="#">Радио бот для teamspeak</a></li>
+                      <li><a href="#">Администрирование сервера </a></li>
+                      <li><a href="#">Специальные скрипты</a></li>
+                  </ul>
+                  </li>
+                  <li role="presentation"><a href="#">Оплата</a></li>
+                  <li role="presentation"><a href="#">Документация</a></li>
+                  <li role="presentation"><a href="#">Контакты</a></li>
+                </ul>
+           </div>
+        </nav>
+           <div class="modal fade" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                   <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+                            <h4 class="modal-title" id="myModalLabel">Войти</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="input-group">
+                            <input type="email" class="form-control" aria-label="..." id="email"><label for="email">E-mail <i>*</i></label>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" class="form-control" aria-label="..." id="password"><label for="password">Пароль <i>*</i></label>
+                        </div>
+                         <div class="clearfix">
+                             <label class="pull-left save-pass"><input type="checkbox">Сохранить пароль</label>
+                             <a href="#" class="pull-right forgot-pass">Забыли пароль?</a>
+                         </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Войти в кабинет</button>
+                            <span>Нет аккаунта?</span>
+                            <a href="#">Зарегистрируйтесь</a>
+                          </div>
+                        </div>
+                  </div>
+               </div>
+            <div class="flexslider bg-slider">
+              <ul class="slides">
+                <li>
+                  <img src="tmp/slide1.jpg" alt="slide"/>
+                  <div class="jumbotron">
+                      <div class="container">
+                          <p>Аренда и продажа серверов</p>
+                          <h1>Ventrilo, TeamSpeak и Mumble</h1>
+                          <p><a class="btn btn-primary btn-lg" href="#" role="button">Заказать</a></p>
+                      </div>
+                    </div>
+                </li>
+                <li>
+                  <img src="tmp/slide1.jpg" alt="slide"/>
+                  <div class="jumbotron">
+                      <div class="container">
+                          <p>Аренда и продажа серверов</p>
+                          <h1>Ventrilo, TeamSpeak и Mumble</h1>
+                          <p><a class="btn btn-primary btn-lg" href="#" role="button">Заказать</a></p>
+                      </div>
+                    </div>
+                </li>
+                <li>
+                  <img src="tmp/slide1.jpg" alt="slide"/>
+                  <div class="jumbotron">
+                      <div class="container">
+                          <p>Аренда и продажа серверов</p>
+                          <h1>Ventrilo, TeamSpeak и Mumble</h1>
+                          <p><a class="btn btn-primary btn-lg" href="#" role="button">Заказать</a></p>
+                      </div>
+                    </div>
+                </li>
+              </ul>
+            </div>
+    </header>
+        <div class="container server-type">
+            <h1>Только сегодня <strong>скидка 30%</strong> на любой сервер</h1>
+            <div class="row server-type-wrapper">
+                <div class="col-xs-4">
+                   <span>Тип сервера:</span>
+                    <ul class="server-select" role="tablist" id="myTab">
+                        <li role="presentation" class="active"><a href="#ven" aria-controls="ven" role="tab" data-toggle="tab"><i class="ven"></i><span>Ventrilo</span></a></li>
+                        <li role="presentation"><a href="#ts" aria-controls="ts" role="tab" data-toggle="tab"><i class="ts"></i><span>TeamSpeak</span></a></li>
+                        <li role="presentation"><a href="#mim" aria-controls="mim" role="tab" data-toggle="tab"><i class="mim"></i><span>Mimble</span></a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-8 slots tab-content" role="tabpanel">
+                   <div role="tabpanel" class="tab-pane active" id="ven">
+                       <button type="button" class="answer" data-toggle="popover" data-content="Слоты это максимальное количество пользователей, которые могут подключаться к серверу одновременно.">?</button>
+                        <span>Кол-во слотов:</span>
+                        <input type="hidden" class="slider-input" value="485" />
+
+                                <div class="clearfix">
+                                    <div class="input-group server-adresss pull-left">
+                                      <input type="text" class="form-control" aria-label="..." placeholder="Адрес сервера">
+                                      <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">.domen.com<span class="caret"></span></button>
+                                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                          <li><a href="#">.domen.com</a></li>
+                                          <li><a href="#">.domen.com</a></li>
+                                          <li><a href="#">.domen.com</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="dropdown pull-right advanced">
+                                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
+                                            Дополнительно
+                                            <span class="caret"></span>
+                                          </button>
+                                          <form class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+                                              <div class="checkbox">
+                                                <label>
+                                                  <input type="checkbox"> Администрирование
+                                    сервера (300р/мес)
+                                                </label>
+                                              </div>
+                                              <div class="checkbox">
+                                                <label>
+                                                  <input type="checkbox"> Скрытие данных
+                                    (100р/мес)
+                                                </label>
+                                              </div>
+                                          </form>
+                                    </div>
+                                </div>
+                          <ul class="options">
+                              <li><i class="fa fa-check"></i>Бесплатные бекапы</li>
+                              <li><i class="fa fa-check"></i>Безлимитный трафик</li>
+                              <li><i class="fa fa-check"></i>Поддержка 7\24</li>
+                          </ul>
+                   </div>
+                   <div role="tabpanel" class="tab-pane" id="ts">
+                       <button type="button" class="answer" data-toggle="popover" data-content="Слоты это максимальное количество пользователей, которые могут подключаться к серверу одновременно.">?</button>
+                        <span>Кол-во слотов:</span>
+                        <input type="hidden" class="slider-input" value="485" />
+
+                                <div class="clearfix">
+                                    <div class="input-group server-adresss pull-left">
+                                      <input type="text" class="form-control" aria-label="..." placeholder="Адрес сервера">
+                                      <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">.domen.com<span class="caret"></span></button>
+                                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                          <li><a href="#">.domen.com</a></li>
+                                          <li><a href="#">.domen.com</a></li>
+                                          <li><a href="#">.domen.com</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="dropdown pull-right advanced">
+                                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
+                                            Дополнительно
+                                            <span class="caret"></span>
+                                          </button>
+                                          <form class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+                                              <div class="checkbox">
+                                                <label>
+                                                  <input type="checkbox"> Администрирование
+                                    сервера (300р/мес)
+                                                </label>
+                                              </div>
+                                              <div class="checkbox">
+                                                <label>
+                                                  <input type="checkbox"> Скрытие данных
+                                    (100р/мес)
+                                                </label>
+                                              </div>
+                                          </form>
+                                    </div>
+                                </div>
+                          <ul class="options">
+                              <li><i class="fa fa-check"></i>Бесплатные бекапы</li>
+                              <li><i class="fa fa-check"></i>Безлимитный трафик</li>
+                              <li><i class="fa fa-check"></i>Поддержка 7\24</li>
+                          </ul>
+                   </div>
+                   <div role="tabpanel" class="tab-pane" id="mim">
+                       <button type="button" class="answer" data-toggle="popover" data-content="Слоты это максимальное количество пользователей, которые могут подключаться к серверу одновременно.">?</button>
+                        <span>Кол-во слотов:</span>
+                        <input type="hidden" class="slider-input" value="485" />
+
+                                <div class="clearfix">
+                                    <div class="input-group server-adresss pull-left">
+                                      <input type="text" class="form-control" aria-label="..." placeholder="Адрес сервера">
+                                      <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">.domen.com<span class="caret"></span></button>
+                                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                          <li><a href="#">.domen.com</a></li>
+                                          <li><a href="#">.domen.com</a></li>
+                                          <li><a href="#">.domen.com</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="dropdown pull-right advanced">
+                                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
+                                            Дополнительно
+                                            <span class="caret"></span>
+                                          </button>
+                                          <form class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+                                              <div class="checkbox">
+                                                <label>
+                                                  <input type="checkbox"> Администрирование
+                                    сервера (300р/мес)
+                                                </label>
+                                              </div>
+                                              <div class="checkbox">
+                                                <label>
+                                                  <input type="checkbox"> Скрытие данных
+                                    (100р/мес)
+                                                </label>
+                                              </div>
+                                          </form>
+                                    </div>
+                                </div>
+                          <ul class="options">
+                              <li><i class="fa fa-check"></i>Бесплатные бекапы</li>
+                              <li><i class="fa fa-check"></i>Безлимитный трафик</li>
+                              <li><i class="fa fa-check"></i>Поддержка 7\24</li>
+                          </ul>
+                   </div>
+                </div>
+            </div>
+            <div class="payment row">
+               <div class="col-xs-5">
+                   <span class="payable"><strong>75 Слотов</strong> Итого к оплате <strong>2750</strong> руб. в мес.</span>
+                    <span>Администрирование сервера +300 руб., Скрыть Ping +50 руб.</span>
+               </div>
+                <div class="input-group col-xs-7">
+                  <input type="text" class="form-control" aria-label="..." placeholder="Введите номер купона">
+                  <div class="input-group-btn">
+                  <button type="button" class="btn btn-default dropdown-toggle value" data-toggle="dropdown" aria-expanded="false">Рубль<span class="caret"></span>                     </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                  <span class="input-group-btn">
+                    <button class="btn btn-default order" type="button">Заказать сейчас</button>
+                  </span>
+                </div>
+            </div>
+        </div>
+        <article class="container offer">
+                <div class="row">
+                    <section class="col-xs-4">
+                        <span class="item1"></span>
+                        <h1>Смена тарифа</h1>
+                        <p>В любое время вы можете изменить тариф на сервере</p>
+                    </section>
+                    <section class="col-xs-4">
+                       <span class="item2"></span>
+                        <h1>Быстрая установка</h1>
+                        <p>Сервер будет готов сразу после оплаты</p>
+                    </section>
+                    <section class="col-xs-4">
+                       <span class="item3"></span>
+                        <h1>Защита от DDOS</h1>
+                        <p>Вы получаете сервер с защитой от любых типов атак</p>
+                    </section>
+                </div>
+                <div class="row">
+                    <section class="col-xs-4">
+                       <span class="item4"></span>
+                        <h1>Клановая оплата</h1>
+                        <p>Удобная система оплаты для вас и ваших друзей</p>
+                    </section>
+                    <section class="col-xs-4">
+                       <span class="item5"></span>
+                        <h1>Мониторинг</h1>
+                        <p>Система наблюдения за вашим голосовым сервером</p>
+                    </section>
+                    <section class="col-xs-4">
+                       <span class="item6"></span>
+                        <h1>Система скидок</h1>
+                        <p>Учавствуйле в акциях и получайте постоянные скидки</p>
+                    </section>
+                </div>
+        </article>
+        <article class="try-free">
+            <div class="container">
+                <div class="bg-word">
+                    <div class="header">
+                        Попробуй бесплатно!
+                        <h1>Тестовые сервера</h1>
+                    </div>
+                    БЕСПЛАТНО
+                </div>
+                <div role="tabpanel" class="tabpanel">
+                  <!-- Nav tabs -->
+                  <ul class="try-free-tab nav nav-tabs nav-justified" role="tablist">
+                    <li role="presentation" class="active"><a href="#ventrilo" aria-controls="ventrilo" role="tab" data-toggle="tab"><span><i class="ven"></i>Ventrilo</span></a></li>
+                    <li role="presentation"><a href="#teamspeak" aria-controls="teamspeak" role="tab" data-toggle="tab"><span><i class="ts"></i>TeamSpeak</span></a></li>
+                    <li role="presentation"><a href="#mumble" aria-controls="mumble" role="tab" data-toggle="tab"><span><i class="mim"></i>Mumble</span></a></li>
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content location">
+                    <div role="tabpanel" class="tab-pane active" id="ventrilo">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                   <span class="number">01</span>
+                                    <p><span><strong><i class="ru"></i>Россия</strong>, Москва</span>
+                                        ru.ruvoice.com:3784</p>
+                                </div>
+                                <div class="col-xs-3">
+                                   <span class="number">02</span>
+                                    <p><span><strong><i class="en"></i>Англия</strong>, Лондон</span>
+                                        en.ruvoice.com:3784</p>
+                                </div>
+                                <div class="col-xs-3">
+                                   <span class="number">03</span>
+                                    <p><span><strong><i class="dk"></i>Дания</strong>, Копенгаген</span>
+                                        dk.ruvoice.com:3784</p>
+                                </div>
+                                <div class="col-xs-3">
+                                   <span class="number">04</span>
+                                    <p><span><strong><i class="pt"></i>Португалия</strong>, Приор-Велью</span>
+                                        pt.ruvoice.com:3784</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3">
+                                   <span class="number">05</span>
+                                    <p><span><strong><i class="nl"></i>Нидерланды</strong>, Амстердам</span>
+                                        nl.ruvoice.com:3784</p>
+                                </div>
+                                <div class="col-xs-3">
+                                   <span class="number">06</span>
+                                    <p><span><strong><i class="se"></i>Швеция</strong>, Мальме</span>
+                                        se.ruvoice.com:3784</p>
+                                </div>
+                                <div class="col-xs-3">
+                                   <span class="number">07</span>
+                                    <p><span><strong><i class="ca"></i>Канада</strong>, Монреаль</span>
+                                        ca.ruvoice.com:3784</p>
+                                </div>
+                                <div class="col-xs-3">
+                                   <span class="number">08</span>
+                                    <p><span><strong><i class="us"></i>США</strong>, Вашингтон</span>
+                                        us.ruvoice.com:3784</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="teamspeak">
+                        <div class="row">
+                            <div class="col-xs-3">
+                               <span class="number">01</span>
+                                <p><strong><i class="ru"></i>Россия</strong>, Москва
+                                    ru.ruvoice.com:3784</p>
+                            </div>
+                            <div class="col-xs-3">
+                               <span class="number">02</span>
+                                <p><strong><i class="en"></i>Англия</strong>, Лондон
+                                    en.ruvoice.com:3784</p>
+                            </div>
+                            <div class="col-xs-3">
+                               <span class="number">03</span>
+                                <p><strong><i class="dk"></i>Дания</strong>, Копенга...
+                                    dk.ruvoice.com:3784</p>
+                            </div>
+                            <div class="col-xs-3">
+                               <span class="number">04</span>
+                                <p><strong><i class="pt"></i>Португалия</strong>, Приор...
+                                    pt.ruvoice.com:3784</p>
+                            </div>
+                            <div class="col-xs-3">
+                               <span class="number">05</span>
+                                <p><strong><i class="nl"></i>Нидерланды</strong>, Амст...
+                                    nl.ruvoice.com:3784</p>
+                            </div>
+                            <div class="col-xs-3">
+                               <span class="number">06</span>
+                                <p><strong><i class="se"></i>Швеция</strong>, Мальме
+                                    se.ruvoice.com:3784</p>
+                            </div>
+                            <div class="col-xs-3">
+                               <span class="number">07</span>
+                                <p><strong><i class="ca"></i>Канада</strong>, Монреаль
+                                    ca.ruvoice.com:3784</p>
+                            </div>
+                            <div class="col-xs-3">
+                               <span class="number">08</span>
+                                <p><strong><i class="us"></i>США</strong>, Вашингтон
+                                    us.ruvoice.com:3784</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="mumble">
+                           <div class="row">
+                                <div class="col-xs-3">
+                                   <span class="number">01</span>
+                                    <p><strong><i class="ru"></i>Россия</strong>, Москва
+                                        ru.ruvoice.com:3784</p>
+                                </div>
+                                <div class="col-xs-3">
+                                   <span class="number">02</span>
+                                    <p><strong><i class="en"></i>Англия</strong>, Лондон
+                                        en.ruvoice.com:3784</p>
+                                </div>
+                                <div class="col-xs-3">
+                                   <span class="number">03</span>
+                                    <p><strong><i class="dk"></i>Дания</strong>, Копенга...
+                                        dk.ruvoice.com:3784</p>
+                                </div>
+                                <div class="col-xs-3">
+                                   <span class="number">04</span>
+                                    <p><strong><i class="pt"></i>Португалия</strong>, Приор...
+                                        pt.ruvoice.com:3784</p>
+                                </div>
+                                <div class="col-xs-3">
+                                   <span class="number">05</span>
+                                    <p><strong><i class="nl"></i>Нидерланды</strong>, Амст...
+                                        nl.ruvoice.com:3784</p>
+                                </div>
+                                <div class="col-xs-3">
+                                   <span class="number">06</span>
+                                    <p><strong><i class="se"></i>Швеция</strong>, Мальме
+                                        se.ruvoice.com:3784</p>
+                                </div>
+                                <div class="col-xs-3">
+                                   <span class="number">07</span>
+                                    <p><strong><i class="ca"></i>Канада</strong>, Монреаль
+                                        ca.ruvoice.com:3784</p>
+                                </div>
+                                <div class="col-xs-3">
+                                   <span class="number">08</span>
+                                    <p><strong><i class="us"></i>США</strong>, Вашингтон
+                                        us.ruvoice.com:3784</p>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+        </article>
+        <div class="download-links">
+            <div class="container">
+                <ul>
+                    <li><a href="#"><span class="settings"></span>Как настроить и установить клиент Ventrilo?</a></li>
+                    <li><a href="#"><span class="faq"></span>Справочная информация</a></li>
+                    <li><a href="#"><span class="download"></span>Скачать с официального сайта</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="we-order-wrapper">
+            <div class="container we-order">
+               <h1>Мы предлагаем</h1>
+                <div class="flexslider order-slider">
+                  <ul class="slides">
+                    <li>
+                      <a href="#"><img src="tmp/s1.jpg" alt="slide"/>
+                          <span>Радио бот для
+                              серверов TeamSpeak</span></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="tmp/s2.jpg" alt="slide"/>
+                          <span>Администрирование
+                              серверов</span></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="tmp/s3.jpg" alt="slide"/>
+                          <span>Cпециальные скрипты
+                              для TeamSpeak</span></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="tmp/s1.jpg" alt="slide"/>
+                          <span>Радио бот для
+                              серверов TeamSpeak</span></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="tmp/s2.jpg" alt="slide"/>
+                          <span>Администрирование
+                              серверов</span></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="tmp/s3.jpg" alt="slide"/>
+                          <span>Cпециальные скрипты
+                              для TeamSpeak</span></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="tmp/s1.jpg" alt="slide"/>
+                          <span>Радио бот для
+                              серверов TeamSpeak</span></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="tmp/s2.jpg" alt="slide"/>
+                          <span>Администрирование
+                              серверов</span></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="tmp/s3.jpg" alt="slide"/>
+                          <span>Cпециальные скрипты
+                              для TeamSpeak</span></a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container text-block">
+            <div class="row">
+                <article class="col-xs-8">
+                    <h1>О голосовых серверах</h1>
+                    <p>Ventrilo, Teamspeak, а так же Mumble сервера могут использоваться для домашнего / персонального применения, например общение с друзьями и семьей или обмена информацией во время онлайн игр, где голосовое общение является важным фактором (например в Counter-Strike для информирования своей команды о расположение противника).</p>
+
+<p>Каналы мамбл, каналы Ventrilo и каналы Teamspeak также можно использовать в корпоративной среде, для общения с группами людей, которые могут находится в разных точках планеты. Также он может помочь, если вы используете программы для коммуникаций групп людей, но они не дают возможности голосового общения.</p>
+
+<p>Голосовые сервера Вентрило, сервера mumble или сервера Тимспик можно арендовать как дополнение к веб-сайту, для общения с администрацией или другими людьми, которые имеют общие интересы.</p>
+                </article>
+                <aside class="col-xs-4">
+                    <h1>Новости</h1>
+                    <div class="new-item">
+                        <span class="date">30.07.2014</span>
+                        <a href="#">Летняя акция! принмай участие и получай бонусы!</a>
+                    </div>
+                    <div class="new-item">
+                        <span class="date">24.07.2014</span>
+                        <a href="#">Новый домен ARCHEAGE.GURU Попробуй сейчас!</a>
+                    </div>
+                    <div class="new-item">
+                        <span class="date">24.07.2014</span>
+                        <a href="#">Скидка для всех наших клиентов. Поддержка и администрирование бесплатно.</a>
+                    </div>
+                    <a href="#" class="all-news">ВСЕ НОВОСТИ</a>
+                </aside>
+            </div>
+        </div>
+        <div class="payment-service">
+            <div class="container">
+                <div class="payment-system"></div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                  <ul class="pull-left links">
+                      <li><a href="#"><span class="email"></span>support@ruvoice.com</a></li>
+                      <li><a href="#"><span class="chat"></span>Система тикет-сообщений</a></li>
+                      <li><a href="#"><span class="icq"></span>108004</a></li>
+                  </ul>
+                  <ul class="social">
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                   </ul>
+                </div>
+            </div>
+            <div class="container">
+                  <div class="row">
+                      <div class="col-xs-3 section">
+                          <span class="header">Аккаунт</span>
+                          <ul class="account">
+                              <li><a href="#">Войти</a></li>
+                              <li><a href="#">Зарегистрироваться</a></li>
+                              <li><a href="#" class="forgot-pass">Забыли пароль?</a></li>
+                          </ul>
+                          <span class="lock"></span>
+                      </div>
+                      <div class="col-xs-3 section">
+                          <span class="header">Компания</span>
+                          <ul>
+                              <li><a href="#">О компании</a></li>
+                              <li><a href="#">Партнерская программа</a></li>
+                              <li><a href="#">Обратная связь</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-xs-3 section">
+                          <span class="header">Услуги</span>
+                          <ul>
+                              <li><a href="#">Заказать Ventrilo</a></li>
+                              <li><a href="#">Заказать Teamspeak</a></li>
+                              <li><a href="#">Заказать Mumble</a></li>
+                              <li><a href="#">Радио-бот для TS3</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-xs-3 section">
+                          <span class="header">Документация</span>
+                          <ul>
+                              <li><a href="#">Настройка Ventrilo</a></li>
+                              <li><a href="#">Настройка Teamspeak 3</a></li>
+                              <li><a href="#">Настройка Mumble</a></li>
+                          </ul>
+                      </div>
+                  </div>
+            </div>
+        </footer>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/jquery.range.js"></script>
+    <script>
+        $(window).load(function() {
+          $('.bg-slider').flexslider({
+            animation: "slide",
+            directionNav: false
+            });
+            $('.order-slider').flexslider({
+                animation: "slide",
+                animationLoop: true,
+                itemWidth: 300,
+                itemMargin: 5,
+                minItems: 3,
+                maxItems: 9,
+                prevText: "",
+                nextText: "",
+                controlNav: false
+            });
+                });
+        $('.slider-input').jRange({
+            from: 10,
+            to: 2000,
+            step: 1,
+            scale: [10,40,125,350,2000],
+            format: '%s слотов',
+            width: 600,
+            showLabels: true
+            });
+        $(function () {
+              $('[data-toggle="popover"]').popover({
+                  placement: 'right'
+              });
+            });
+
+        $('.dropdown').hover(function() {
+              $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+            }, function() {
+              $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+            });
+        $('#sign-in input[type="email"], #sign-in input[type="password"]').change( function(){
+             if($(this).val().length > 0) {
+                 $(this).addClass('focus');
+             }
+             else{
+                 $(this).removeClass('focus');
+             }
+        });
+      </script>
+      <!-- For browser test delete on production -->
+      <script src="js/delet_me.js"></script>
+  </body>
+</html>

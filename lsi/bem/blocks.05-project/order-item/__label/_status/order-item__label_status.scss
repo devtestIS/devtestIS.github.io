@@ -1,0 +1,8 @@
+.order-item__label_status {
+  &_success {
+    background: #95c11e;
+  }
+  &_warning {
+    background: #ffab00;
+  }
+}

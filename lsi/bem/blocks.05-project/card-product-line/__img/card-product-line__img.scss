@@ -1,0 +1,17 @@
+.card-product-line__img {
+  //height: 185px;
+  display: block;
+  float: left;
+  width: 215px;
+  img {
+    margin: auto;
+  }
+  @media (max-width: $screen-md-max) {
+    width: 145px;
+  }
+  @media (max-width: $screen-sm-max) {
+    float: none;
+    width: auto;
+    padding-top: 25px;
+  }
+}

@@ -1,0 +1,14 @@
+.header__inner {
+  flex-grow: 10;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  position: relative;
+  @media (min-width: $screen-sm-min) {
+    background-color: lighten($brand-primary, 100%);
+    padding-left: $grid-gutter-width/2;
+  }
+  @media (min-width: $screen-md-min) {
+    padding-left: $grid-gutter-width;
+  }
+}

@@ -1,0 +1,6 @@
+.thumbnails__caption {
+    width: 100%;
+}
+.main-nav__li.active .a, .main-nav__li a {
+    border-bottom-color: rgba(20, 112, 204, 0.3);
+}

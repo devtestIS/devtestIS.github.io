@@ -1,0 +1,17 @@
+.main-search {
+  background: #3b4257;
+  padding: 47px 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+
+  @media(max-width: $screen-md-max) {
+
+    bottom: auto;
+    top: 100%;
+
+    padding: 20px 0;
+
+  }
+}

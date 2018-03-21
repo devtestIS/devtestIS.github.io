@@ -1,0 +1,12 @@
+.list-unstyled {
+  & &{
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+  }
+  li{
+    margin: 0.5em 0;
+    &:first-child{ margin-top: 0 }
+    &:last-child{ margin-bottom: 0 }
+  }
+}

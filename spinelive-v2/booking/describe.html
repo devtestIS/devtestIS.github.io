@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Describe your Conditions</title>
+
+    <!-- Bootstrap -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="chose-doctor height-full">
+        <header>
+            <a href="javascript:void(0)" class="pull-left"><img src="img/logo_small.png" alt="logo"></a>
+            <a href="javascript:void(0)" class="pull-left turn-back"><i class="i angle-left"></i><i class="i icon1"></i> Schedule a 1-on-1 Online Consultation with a Doctor.</a> 
+            <a href="javascript:void(0)" class="login-logout pull-right">Logout</a>
+            <ul class="pull-right profile">
+                <li><a href="javascript:void(0)"><span>Samuel Doggins</span></a></li>
+                <li><a href="javascript:void(0)">Edit Profile</a></li>
+            </ul>
+            
+        </header>
+        <div class="doctors-table">
+           <ul class="nav-line pull-left">
+               <li><a href="javascript:void(0)"><span>Choose a Doctor  and Time</span></a></li>
+               <li><a href="javascript:void(0)" class="active"><span>Describe your Conditions</span></a></li>
+               <li><a href="javascript:void(0)"><span>Payment Options</span></a></li>
+               <li><a href="javascript:void(0)"><span>Upload Documents</span></a></li>
+           </ul>
+           <div class="describe pull-right">
+               <div class="row">
+                   <div class="col-xs-8 col-left">
+                        <form class="form-inline">
+                            <h2>Describe your Conditions</h2>
+                           <div class="row">
+                               <div>
+                                    <label for="Input5" class="col-xs-2">Date of Birth</label>
+                                    <div class="select-date col-xs-9">
+                                        <select class="selectpicker month form-control">
+                                            <option disabled>Month</option>
+                                            <option>January</option>
+                                         </select>
+                                         <select class="selectpicker date form-control">
+                                            <option disabled>Date</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                         </select>
+                                         <select class="selectpicker year form-control">
+                                            <option disabled>Year</option>
+                                            <option>2015</option>
+                                         </select>
+                                     </div>
+                               </div>
+
+                               <div class="clearfix">
+                                    <label for="Input5" class="col-xs-2">Gender</label>
+                                    <div class="col-xs-2">
+                                        <label><input type="radio" name="gender" value="male"><i></i><span>Male</span></label>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <label><input type="radio" name="gender" value="female"><i></i><span>Female</span></label>
+                                    </div>
+                               </div>
+
+                               <div class="col-xs-12">
+                                    <label>Describe your Symptoms and whatever you concider important here</label>
+                                    <textarea class="form-control" rows="4" placeholder="Type here"></textarea>
+                               </div>
+                           </div>
+                           <br>
+                           <button class="next">Next</button>
+                        </form>  
+
+
+
+                   </div>
+                   <div class="col-xs-4">
+                       <h3>Your Doctor:</h3>
+                       <div class="clearfix">
+                           <div class="img">
+                               <img src="img/tmp/face-f.png" alt="img">
+                           </div>
+                           <span class="name">Praveen Kadimcherla (Dr Prav), MD</span>
+                       </div>
+                       <span class="consult">Your Consultation: <br>
+                            Friday, November 6, 2015, 5:00 pm</span>
+                            <a href="javascript:void(0)" class="change">Change</a>
+                   </div>
+               </div>
+           </div>
+            
+        </div>
+        <footer>
+            <ul>
+                <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-pinterest-p"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/jquery.rating.js"></script>
+  </body>
+</html>

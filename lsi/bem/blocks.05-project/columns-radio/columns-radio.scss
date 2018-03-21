@@ -1,0 +1,8 @@
+.columns-radio {
+  column-count: 4;
+  column-width: 170px;
+  column-gap: $grid-gutter-width;
+  .radio{
+    margin: 0;
+  }
+}

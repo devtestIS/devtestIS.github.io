@@ -1,0 +1,50 @@
+.join {
+  position: relative;
+  overflow: hidden;
+  &:first-child{margin-top: -$grid-gutter-width}
+  &__overlay{
+    z-index: 0;
+
+    &,
+    &:after,
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    &:before{background: radial-gradient(circle at left top, $blue-dark 10%, rgba(255,255,255,0) 100%)}
+    &:after{
+      background-color: $blue-dark;
+      opacity: 0.4;
+    }
+  }
+  &__title{
+    color: lighten($headings-color, 100%);
+    margin-top: 0;
+    margin-bottom: 0;
+    @media (min-width: $screen-lg-min) {
+      font-size: 42px;
+    }
+  }
+  &__inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: lighten($text-color, 100%);
+    .p, p{
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}

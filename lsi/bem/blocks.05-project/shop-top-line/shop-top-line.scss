@@ -1,0 +1,7 @@
+.shop-top-line {
+  position: relative;
+  padding-right: 215px;
+  @media (max-width: $screen-xs-max) {
+    padding-right: 0;
+  }
+}
