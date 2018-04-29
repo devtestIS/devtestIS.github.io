@@ -1,17 +1,22 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
-  </div>
+  <main id="app">
+    <form>
+      <SumQuestion/>
+      <ScalePanel/>
+    </form>
+  </main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+
+import SumQuestion from './components/SumQuestion'
+import ScalePanel from './components/ScalePanel'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ScalePanel,
+    SumQuestion
   }
 }
 </script>
