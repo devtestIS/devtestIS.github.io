@@ -226,7 +226,7 @@
       },
       customFilter(items, search, filter) {
             search = search.toString().toLowerCase()
-            return items.filter(row => filter(row["name"], search))
+            return items.filter(column => filter(column["name"], search))
         }
     }
   };
