@@ -49,9 +49,9 @@
           </tr>
         </template>
         <template slot="items" slot-scope="props">
-          <tr v-if="showFired || props.item.fireDate === null" v-bind:class="{ 'red lighten-3': props.item.fireDate }" :active="props.selected" @click="props.selected = !props.selected">
+          <tr v-if="showFired || props.item.fireDate === null" v-bind:class="{ 'red lighten-3': props.item.fireDate }">
             <td>
-              <v-checkbox v-if="props.item.fireDate === null" :input-value="props.selected" primary hide-details></v-checkbox>
+              <v-checkbox v-if="props.item.fireDate === null" v-model="props.selected" primary hide-details></v-checkbox>
             </td>
             <td class="text-xs-center">{{ props.item.name }}</td>
             <td class="text-xs-center">{{ props.item.companyName }}</td>
@@ -196,6 +196,8 @@
 </style>
 
 <script>
+  import { data } from '../data/data.js';
+
   export default {
     data: () => ({
       pagination: {
@@ -248,105 +250,14 @@
           value: "byHours"
         }
       ],
-      employees: [{
-          value: false,
-          name: "Джордж Вашингтон",
-          companyName: 'ООО "Синергия"',
-          positionName: "Первый президент США",
-          hireDate: "1789-04-30",
-          fireDate: "1797-03-04",
-          salary: 1000,
-          fraction: 100,
-          base: 1000,
-          advance: 1000,
-          byHours: false
-        },
-        {
-          value: false,
-          name: "Ричард I Львиное Сердце",
-          companyName: 'ООО "Синергия"',
-          positionName: "Король Англии",
-          hireDate: "1189-01-01",
-          fireDate: "1199-05-17",
-          salary: 1000,
-          fraction: 100,
-          base: 1000,
-          advance: 1000,
-          byHours: true
-        },
-        {
-          value: false,
-          name: "Джейсон Стейтем",
-          companyName: 'ООО "Синергия"',
-          positionName: "Бейкон",
-          hireDate: "1998-09-01",
-          fireDate: null,
-          salary: 1000,
-          fraction: 100,
-          base: 1000,
-          advance: 1000,
-          byHours: false
-        },
-        {
-          value: false,
-          name: "Тарантино К. Дж.",
-          companyName: 'ООО "Синергия"',
-          positionName: "Джимми",
-          hireDate: "1994-04-15",
-          fireDate: null,
-          salary: 1000,
-          fraction: 100,
-          base: 1000,
-          advance: 1000,
-          byHours: false
-        },
-        {
-          value: false,
-          name: "Камбербэтч Б.",
-          companyName: 'ООО "Синергия"',
-          positionName: "Смауг",
-          hireDate: "1000-01-01",
-          fireDate: "2941-10-09",
-          salary: 1000,
-          fraction: 100,
-          base: 1000,
-          advance: 1000,
-          byHours: false
-        },
-        {
-          value: false,
-          name: "Крузенштерн И. Ф.",
-          companyName: 'ООО "Синергия"',
-          positionName: "Человек и пароход",
-          hireDate: "1770-11-08",
-          fireDate: null,
-          salary: 1000,
-          fraction: 100,
-          base: 1000,
-          advance: 1000,
-          byHours: false
-        },
-        {
-          value: false,
-          name: "Бендер С. Р.",
-          companyName: '"Planet Express"',
-          positionName: "Робот-сгибальщик",
-          hireDate: "2997-03-27",
-          fireDate: null,
-          salary: 1000,
-          fraction: 100,
-          base: 1000,
-          advance: 1000,
-          byHours: true
-        }
-      ]
+      employees: data
     }),
     methods: {
       toggleAll() {
         if (this.selected.length) {
           this.selected = [];
         } else {
-          this.selected = this.employees.slice();
+          this.selected = this.employees.filter(item => item.fireDate === null);
         }
       },
       changeSort(column) {
