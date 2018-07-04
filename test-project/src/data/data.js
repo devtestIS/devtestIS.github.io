@@ -1,4 +1,43 @@
-const data = [
+const headersData = [{
+    text: "Сотрудник",
+    align: "left",
+    sortable: true,
+    value: "name"
+  },
+  {
+    text: "Компания",
+    value: "companyName"
+  },
+  {
+    text: "Должность",
+    value: "positionName"
+  },
+  {
+    text: "Дата приема",
+    value: "hireDate"
+  },
+  {
+    text: "Дата увольнения",
+    value: "fireDate"
+  },
+  {
+    text: "Ставка",
+    value: "salary"
+  },
+  {
+    text: "База",
+    value: "base"
+  },
+  {
+    text: "Аванс",
+    value: "advance"
+  },
+  {
+    text: "Почасовая",
+    value: "byHours"
+  }]
+
+const employeesData = [
     {
         value: false,
         name: "Джордж Вашингтон",
@@ -92,4 +131,4 @@ const data = [
       }
 ]
 
-export { data };
+export { employeesData, headersData };
