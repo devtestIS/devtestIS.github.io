@@ -377,7 +377,7 @@
         this.snackText = 'Редактирование'
       },
       close () {
-        console.log('closed')
+        console.log(this.selected)
       }
     },
     computed: {
