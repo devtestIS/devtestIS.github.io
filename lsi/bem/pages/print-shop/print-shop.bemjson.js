@@ -19,7 +19,7 @@ module.exports = {
 		}
 	}],
 	styles: [{elem: 'css', url: '../_merged/_merged.css'}],
-	scripts: [{elem: 'js', url: '../_merged/_merged.js'}, {elem: 'js', url: '../_merged/_merged.i18n.ru.js'}, {elem: 'js', url: 'http://api-maps.yandex.ru/2.1/?lang=ru_RU'}],
+	scripts: [{elem: 'js', url: '../_merged/_merged.js'}, {elem: 'js', url: '../_merged/_merged.i18n.ru.js'}, {elem: 'js', url: 'https://api-maps.yandex.ru/2.1/?lang=ru_RU'}],
 	content: [
 		{
 			block: 'container',

@@ -1,6 +1,6 @@
 # btn
 
-Блок реализует компонент http://getbootstrap.com/css/#buttons
+Блок реализует компонент https://getbootstrap.com/css/#buttons
 
 ## Обзор
 

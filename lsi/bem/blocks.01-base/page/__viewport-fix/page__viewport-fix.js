@@ -1,4 +1,4 @@
-// http://getbootstrap.com/getting-started/#support-ie10-width
+// https://getbootstrap.com/getting-started/#support-ie10-width
 (function() {
     "use strict";
 

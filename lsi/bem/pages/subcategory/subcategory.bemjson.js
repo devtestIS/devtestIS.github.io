@@ -58,7 +58,7 @@ module.exports = {
                                                 {mix: {block: 'row', elem: 'col', mods: {xs: 12, sm: 12, md: 6, lg: 3}}, content: [
                                                     {elem: 'item', mix: {block: 'active'}, tag: 'a', attrs: {href: '#'}, content: [
                                                         {elem: 'image', content: [
-                                                            {tag: 'img', attrs: {src: 'http://placehold.it/50x50'}}
+                                                            {tag: 'img', attrs: {src: 'https://placehold.it/50x50'}}
                                                         ]},
                                                         {elem: 'text', content: [
                                                             'Дрель безударная 2-скоростная BOSCH GBM 16 безударная 2-скоростная'
@@ -71,7 +71,7 @@ module.exports = {
                                                     {mix: {block: 'row', elem: 'col', mods: {xs: 12, sm: 12, md: 6, lg: 3}}, content: [
                                                         {elem: 'item', tag: 'a', attrs: {href: '#'}, content: [
                                                             {elem: 'image', content: [
-                                                                {tag: 'img', attrs: {src: 'http://placehold.it/50x50'}}
+                                                                {tag: 'img', attrs: {src: 'https://placehold.it/50x50'}}
                                                             ]},
                                                             {elem: 'text', content: [
                                                                 'Дрель безударная 2-скоростная BOSCH GBM 16 безударная 2-скоростная'
@@ -554,7 +554,7 @@ module.exports = {
                                                 {mix: {block: 'row', elem: 'col', mods: {xs: 12, sm: 12, md: 6, lg: 3}}, content: [
                                                     {elem: 'item', mix: {block: 'active'}, tag: 'a', attrs: {href: '#'}, content: [
                                                         {elem: 'image', content: [
-                                                            {tag: 'img', attrs: {src: 'http://placehold.it/50x50'}}
+                                                            {tag: 'img', attrs: {src: 'https://placehold.it/50x50'}}
                                                         ]},
                                                         {elem: 'text', content: [
                                                             'Дрель безударная 2-скоростная BOSCH GBM 16 безударная 2-скоростная'
@@ -567,7 +567,7 @@ module.exports = {
                                                     {mix: {block: 'row', elem: 'col', mods: {xs: 12, sm: 12, md: 6, lg: 3}}, content: [
                                                         {elem: 'item', tag: 'a', attrs: {href: '#'}, content: [
                                                             {elem: 'image', content: [
-                                                                {tag: 'img', attrs: {src: 'http://placehold.it/50x50'}}
+                                                                {tag: 'img', attrs: {src: 'https://placehold.it/50x50'}}
                                                             ]},
                                                             {elem: 'text', content: [
                                                                 'Дрель безударная 2-скоростная BOSCH GBM 16 безударная 2-скоростная'
@@ -860,7 +860,7 @@ module.exports = {
                                     {elem: 'inner', content: [
                                         {elem: 'image', content: [
                                             {block: 'img', mix: {block: 'img-responsive'}, attrs: {
-                                                'src': 'http://placehold.it/80x100'
+                                                'src': 'https://placehold.it/80x100'
                                             }}
                                         ]},
                                         {elem: 'body', content: [

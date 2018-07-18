@@ -1,6 +1,6 @@
 # alert
 
-Блок реализует компонент http://getbootstrap.com/components/#alerts
+Блок реализует компонент https://getbootstrap.com/components/#alerts
 
 ## Обзор
 

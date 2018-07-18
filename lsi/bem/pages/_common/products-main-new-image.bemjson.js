@@ -8,7 +8,7 @@ module.exports = [
         content: [
             {block: 'catalog-tile', content: [
                 {elem: 'image', content: [
-                    {tag: 'img', attrs: {src: 'http://placehold.it/460x460'}}
+                    {tag: 'img', attrs: {src: 'https://placehold.it/460x460'}}
                 ]},
                 {elem: 'title', content: ['Заголовок который может иметь 2 строки']}
             ]}

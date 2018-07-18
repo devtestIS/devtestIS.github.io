@@ -1,6 +1,6 @@
 # row
 
-Блок реализует сетку страницы http://getbootstrap.com/css/#grid
+Блок реализует сетку страницы https://getbootstrap.com/css/#grid
 
 ## Обзор
 

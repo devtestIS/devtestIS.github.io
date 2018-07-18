@@ -8,7 +8,7 @@ module.exports = function (bh) {
             responsive = options.responsive === true ? true : false,
             lang = json.lang || languages[0],
             noscriptWarning = json.noscriptWarning || 'В вашем браузере отключен JavaScript. Многие элементы сайта могут работать некорректно.',
-            oldBrowserWarning = json.oldBrowserWarning || 'Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a rel="nofollow" onclick="window.open(this.href, \'_blank\');return false;" href="http://browsehappy.com/">обновите свой браузер</a> чтобы улучшить взаимодействие с сайтом.';
+            oldBrowserWarning = json.oldBrowserWarning || 'Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a rel="nofollow" onclick="window.open(this.href, \'_blank\');return false;" href="https://browsehappy.com/">обновите свой браузер</a> чтобы улучшить взаимодействие с сайтом.';
 
         json.favicons = json.favicons || [
                 {elem: 'favicon', href: '../../../favicons/touch-icon-180x180-iphone-6-plus.png', size: '180x180'},

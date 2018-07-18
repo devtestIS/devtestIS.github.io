@@ -111,7 +111,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 
 
 /* begin: ../../blocks.01-base/page/__viewport-fix/page__viewport-fix.js */
-// http://getbootstrap.com/getting-started/#support-ie10-width
+// https://getbootstrap.com/getting-started/#support-ie10-width
 (function() {
     "use strict";
 

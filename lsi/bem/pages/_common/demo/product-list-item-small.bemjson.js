@@ -3,7 +3,7 @@ module.exports = {
 	content: [
 		{
 			tag: 'img',
-			attrs: {src: 'http://placehold.it/333x200'}
+			attrs: {src: 'https://placehold.it/333x200'}
 		},
 		{
 			cls: 'caption',

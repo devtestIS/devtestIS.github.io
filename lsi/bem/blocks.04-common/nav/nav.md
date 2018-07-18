@@ -1,6 +1,6 @@
 # nav
 
-Блок реализует компонент http://getbootstrap.com/components/#nav
+Блок реализует компонент https://getbootstrap.com/components/#nav
 
 ## Обзор
 
