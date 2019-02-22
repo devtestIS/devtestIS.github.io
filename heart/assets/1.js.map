@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./node_modules/@intervolga/bh-ext/index.js"],"names":["exports","BH","__webpack_require__"],"mappings":"4EAAAA,EAAAC,GAAAC,EAAA","file":"assets/1.js","sourcesContent":["exports.BH = require('./lib/bh');\n"],"sourceRoot":""}
