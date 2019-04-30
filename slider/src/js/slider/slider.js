@@ -4,22 +4,54 @@ document.addEventListener('DOMContentLoaded', (e) => {
     const sliders = [...document.querySelectorAll(`.${className}`)];
     let animation = true;
     const animationSlider = (slider, direction) => {
-        const forward = direction === 'right';
-        console.log(forward);
         animation = false;
-        const active = [...slider.children].find(element => element.classList.contains('active'));
-        const activeNext = active.nextElementSibling;
+        const forward = direction === 'right';
+        const items = [...slider.children];
+        const active = items.find(element => element.classList.contains('active'));
+        const nextSibling = active.nextElementSibling || slider.appendChild(items[0]);
+        const prevSibling = active.previousElementSibling || slider.insertBefore(slider.lastChild, active);
+        const activeNext = forward ? nextSibling : prevSibling;
+        const directionClass = forward ? 'slider-forward' : 'slider-backwards';
+        if (!forward) {
+            activeNext.classList.add('backward');
+        }
         active.classList.remove('active');
-        const newItem = active.cloneNode(true);
-        active.classList.add('slider-forward');
-        activeNext.classList.add('slider-forward');
+        active.classList.add('animate');
         activeNext.classList.add('active');
-        activeNext.addEventListener('transitionend', () => {
-            activeNext.classList.remove('slider-forward');
-            active.remove();
-            slider.appendChild(newItem);
-            animation = true;
-        });
+        activeNext.classList.add('animate');
+
+        const animateObserve = () => {
+            const options = {
+                root: slider,
+                rootMargin: '0px',
+                threshold: 1.0
+            };
+            
+            const io = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        active.classList.add(directionClass);
+                        activeNext.classList.add(directionClass);
+                        activeNext.addEventListener('transitionend', () => {
+                            activeNext.classList.remove(directionClass, 'animate', 'backward');
+                            active.classList.remove(directionClass, 'animate');
+                            animation = true;
+                        });
+                        observer.unobserve(entry.target);
+                    }
+                });
+                
+            }, options);
+            io.observe(active);
+        };
+
+        if(!('IntersectionObserver' in window)) {
+            import('intersection-observer').then(() => {
+                animateObserve();
+            });
+        } else {
+            animateObserve();
+        }
     };
     const buttonAction = (container, slider) => {
         container.addEventListener('click', (e) => {

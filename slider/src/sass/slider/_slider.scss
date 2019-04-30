@@ -6,9 +6,16 @@
     overflow: hidden;
 
     &__item {
+        display: none;
         flex-basis: 100%;
         width: 100%;
         flex-shrink: 0;
+        &.animate {
+            transition: transform ease 0.5s;
+        }
+        &.animate, &.active {
+            display: block;
+        }
     }
 
     &__button {

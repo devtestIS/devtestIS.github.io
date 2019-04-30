@@ -5,7 +5,7 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 import TerserPlugin from 'terser-webpack-plugin';
 import globImporter from 'node-sass-glob-importer';
-
+console.log(process.env.NODE_ENV);
 export default {
   entry: {
     index: './src/js/index.js'
@@ -31,7 +31,8 @@ export default {
         test: /\.scss$/,
         use: [
             // fallback to style-loader in development
-            process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
+            // process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
+            MiniCssExtractPlugin.loader,
             'css-loader',
             {
               loader: 'sass-loader',

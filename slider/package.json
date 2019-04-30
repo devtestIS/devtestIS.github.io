@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --display-error-details",
-    "server": "webpack-dev-server --display-error-details",
+    "build": "webpack --mode=production --display-error-details",
+    "server": "webpack-dev-server --mode=development --display-error-details",
     "stats": "webpack --profile --json > stats.json"
   },
   "keywords": [],
@@ -37,6 +37,7 @@
   "dependencies": {
     "@babel/runtime": "^7.4.4",
     "bootstrap": "^4.3.1",
+    "intersection-observer": "^0.6.0",
     "node-sass-glob-importer": "^5.3.1",
     "normalize.css": "^8.0.1"
   }
