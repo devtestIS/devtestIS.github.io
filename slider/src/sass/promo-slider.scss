@@ -1,0 +1,10 @@
+.promo-slider {
+    width: 1140px;
+    margin: auto;
+
+    &__image {
+        display: block;
+        width: 100%;
+        background: grey;
+    }
+}

@@ -1,0 +1,7 @@
+.slider-backwards {
+    transform: translateX(100%);
+    transition: transform ease 0.5s;
+    &.active {
+        margin-left: -100%;
+    }
+}

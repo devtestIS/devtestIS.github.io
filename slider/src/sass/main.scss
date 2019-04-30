@@ -1,0 +1,11 @@
+@import "~normalize.css";
+@import "./promo-slider";
+@import "./slider/**/*";
+
+.main {
+    display: flex;
+}
+
+header, footer {
+    text-align: center;
+}

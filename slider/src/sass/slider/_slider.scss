@@ -1,0 +1,27 @@
+.slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    overflow: hidden;
+
+    &__item {
+        flex-basis: 100%;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    &__button {
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+
+        &_left {
+            left: 30px;
+        }
+
+        &_right {
+            right: 30px;
+        }
+    }
+}
