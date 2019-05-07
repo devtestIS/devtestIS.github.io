@@ -31,8 +31,8 @@ export default {
         test: /\.scss$/,
         use: [
             // fallback to style-loader in development
-            // process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
-            MiniCssExtractPlugin.loader,
+            process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
+            // MiniCssExtractPlugin.loader,
             'css-loader',
             {
               loader: 'sass-loader',
