@@ -4,11 +4,9 @@
     flex-wrap: nowrap;
     position: relative;
     overflow: hidden;
+    transition: all ease 0.5s;
 
     &__item {
-        display: none;
-        flex-basis: 100%;
-        width: 100%;
         flex-shrink: 0;
         &.animate {
             transition: transform ease 0.5s;
