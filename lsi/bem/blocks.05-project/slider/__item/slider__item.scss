@@ -1,9 +1,0 @@
-.slider__item {
-    visibility: hidden;
-    &:first-child {
-        visibility: visible;
-    }
-    .slick-initialized & {
-        visibility: visible;
-    }
-}

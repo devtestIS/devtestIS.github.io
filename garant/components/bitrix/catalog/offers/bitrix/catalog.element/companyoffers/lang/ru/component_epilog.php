@@ -1,3 +1,0 @@
-<?php
-$MESS['INTERVOLGA_GARANT.H1_TEMPLATE'] = '#COMPANY#: Все предложения';
-$MESS['INTERVOLGA_GARANT.TITLE_TEMPLATE'] = '#COMPANY#: Все предложения';

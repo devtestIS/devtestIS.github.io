@@ -1,1 +1,0 @@
-<img class="img-responsive logo__img" src="/local/templates/main/images/logo.png" alt="ЛидерСтройИнструмент" title="ЛидерСтройИнструмент" />

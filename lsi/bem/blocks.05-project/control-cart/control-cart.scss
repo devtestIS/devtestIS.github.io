@@ -1,8 +1,0 @@
-.control-cart {
-  display: flex;
-  flex-flow: nowrap row;
-  justify-content: flex-end;
-  @media (max-width: 600px) {
-    flex-wrap: wrap;
-  }
-}

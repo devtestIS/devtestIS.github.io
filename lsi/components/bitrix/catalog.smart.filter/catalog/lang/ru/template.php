@@ -1,2 +1,0 @@
-<?
-$MESS["INTERVOLGA_CUSTOM.CATEGORIES"] = "Категории";

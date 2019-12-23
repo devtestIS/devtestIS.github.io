@@ -1,8 +1,0 @@
-@import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-
-@if $responsive != true {
-  //TODO: disable media queries grid
-  .container {
-    width: $container-lg !important;
-  }
-}

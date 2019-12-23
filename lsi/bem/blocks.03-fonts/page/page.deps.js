@@ -1,5 +1,0 @@
-({
-    shouldDeps: [
-        {block: 'custom-fonts'}
-    ]
-})

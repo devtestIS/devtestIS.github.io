@@ -1,1 +1,0 @@
-<? define('WRAP_INFORMATION', 'Y');

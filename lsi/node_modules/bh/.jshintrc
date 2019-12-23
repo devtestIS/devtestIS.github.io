@@ -1,9 +1,0 @@
-{
-    "boss": true,
-    "eqeqeq": true,
-    "eqnull": true,
-    "evil": true,
-    "noempty": true,
-    "quotmark": "single",
-    "unused": true
-}

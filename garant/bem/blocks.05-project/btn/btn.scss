@@ -1,7 +1,0 @@
-.btn {
-  font-weight: 600;
-}
-
-.btn_color_border-primary {
-  @include button-variant($btn-primary-bg, transparent, $btn-primary-bg);
-}

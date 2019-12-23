@@ -1,7 +1,0 @@
-.ordering-points {
-    @include make-row();
-
-    display: flex;
-    flex-wrap: wrap;
-    counter-reset: number;
-}

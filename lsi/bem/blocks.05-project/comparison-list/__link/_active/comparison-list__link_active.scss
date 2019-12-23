@@ -1,9 +1,0 @@
-.comparison-list__link_active {
-  color: #000000;
-  pointer-events: none;
-  border-color: transparent;
-  font-weight: bold;
-  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-    display: block;
-  }
-}
