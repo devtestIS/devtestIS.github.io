@@ -24,7 +24,6 @@ export default new Vuex.Store({
   actions: {
     async setNoteInstance ({ commit, state }, payload) {
       try {
-        console.log(payload)
         commit(SET_NOTE_INSTANCE, payload)
         await localStorage.setItem('notes-list', JSON.stringify(state.notesList))
 

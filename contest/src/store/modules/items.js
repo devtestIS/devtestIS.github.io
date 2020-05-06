@@ -54,24 +54,32 @@ const mutations = {
 
 const actions = {
   async setItem ({ dispatch, commit, state }, payload) {
-    await dispatch('setNoteInstance', [{ list: state.list, heading: state.heading }, payload], { root: true })
-    commit(SET_EXISTING_LIST, [])
-    commit(SET_TEXT, '')
+    try {
+      await dispatch('setNoteInstance', [{ list: state.list, heading: state.heading }, payload], { root: true })
+      commit(SET_EXISTING_LIST, [])
+      commit(SET_TEXT, '')
+    } catch (error) {
+      console.error(error)
+    }
   },
   async removeNote ({ dispatch, commit }, payload) {
-    await dispatch('removeNoteInstance', payload, { root: true })
-    commit(SET_EXISTING_LIST, [])
-    commit(SET_TEXT, '')
-    router.push('/')
+    try {
+      await dispatch('removeNoteInstance', payload, { root: true })
+      commit(SET_EXISTING_LIST, [])
+      commit(SET_TEXT, '')
+      router.push('/')
+    } catch (error) {
+      console.error(error)
+    }
   },
   async setExistingList ({ commit }, payload) {
     try {
       const list = await JSON.parse(localStorage.getItem('notes-list'))
-      if (list && list[payload].list) {
+      if (list[payload] && list[payload].list) {
         commit(SET_EXISTING_LIST, list[payload].list)
       }
     } catch (error) {
-      console.log(error)
+      console.error(error)
     }
   },
   async restoreChanges ({ commit }, payload) {
@@ -79,7 +87,7 @@ const actions = {
       const list = await JSON.parse(localStorage.getItem('notes-list'))
       commit(RESTORE_LIST, list[payload].list)
     } catch (error) {
-      console.log(error)
+      console.error(error)
     }
   }
 }
