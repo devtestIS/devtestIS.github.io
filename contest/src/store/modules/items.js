@@ -85,7 +85,7 @@ const actions = {
   async restoreChanges ({ commit }, payload) {
     try {
       const list = await JSON.parse(localStorage.getItem('notes-list'))
-      commit(RESTORE_LIST, list[payload].list)
+      commit(RESTORE_LIST, list[payload] ? list[payload].list : [])
     } catch (error) {
       console.error(error)
     }
