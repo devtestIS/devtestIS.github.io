@@ -1,6 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
+  url: "https://app.msrvbattle.ru",
   baseUrl: "https://app.msrvbattle.ru",
   headers: {
     Accept: "application/json",
