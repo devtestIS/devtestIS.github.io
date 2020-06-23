@@ -41,10 +41,8 @@ export default {
   },
   computed: {
     prize() {
-      const data = this.tournamentData;
-      return data
-        ? data.prizeTable.reduce((prevVal, currVal) => prevVal + currVal)
-        : 0;
+      const val = this.tournamentData.prizeTable;
+      return val ? val.reduce((prevVal, currVal) => prevVal + currVal) : 0;
     },
     date() {
       return moment(this.tournamentData.startedAt)
