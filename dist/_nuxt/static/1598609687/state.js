@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1598609687",layout:"default",error:null,state:{email:{sender:a,name:a,text:a,message:a},"mutation-types":{},user:{avatar:a,name:a,bio:a,email:a}},serverRendered:true,routePath:"\u002F",config:{}}}(""));

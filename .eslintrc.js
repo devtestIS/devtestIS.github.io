@@ -1,20 +1,30 @@
 module.exports = {
   root: true,
+
   env: {
-    browser: true,
-    node: true,
+    node: true
   },
+
+  extends: ['plugin:vue/vue3-essential', 'eslint:recommended', '@vue/prettier'],
+
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: 'babel-eslint'
   },
-  extends: [
-    '@nuxtjs',
-    'prettier',
-    'prettier/vue',
-    'plugin:prettier/recommended',
-    'plugin:nuxt/recommended',
-  ],
-  plugins: ['prettier'],
-  // add your custom rules here
-  rules: {},
+
+  rules: {
+    'no-console': 'off',
+    'no-debugger': 'off'
+  },
+
+  overrides: [
+    {
+      files: [
+        '**/__tests__/*.{j,t}s?(x)',
+        '**/tests/unit/**/*.spec.{j,t}s?(x)'
+      ],
+      env: {
+        jest: true
+      }
+    }
+  ]
 }

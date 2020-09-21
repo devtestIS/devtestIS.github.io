@@ -1,8 +1,0 @@
-export const SET_AVATAR = 'SET_AVATAR'
-export const SET_BIO = 'SET_BIO'
-export const SET_EMAIL = 'SET_EMAIL'
-export const SET_NAME = 'SET_NAME'
-export const SET_EMAIL_SENDER = 'SET_EMAIL_SENDER'
-export const SET_EMAIL_NAME = 'SET_EMAIL_NAME'
-export const SET_EMAIL_TEXT = 'SET_EMAIL_TEXT'
-export const SET_MESSAGE = 'SET_MESSAGE'
